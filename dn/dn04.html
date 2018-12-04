@@ -1,0 +1,109 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">시간 및 접수안내</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<div class="title-type2">시간 및 접수안내</div>
+			<div class="cont">
+				<!-- accordion wrap -->
+				<div class="accordion-wrap">
+					<dl class="accordion" id="accordionGroup" role="presentation">
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true">
+								<span>당일접수</span>
+								<span class="accordion-icon"></span>
+							</button>
+						</dt>
+						<dd id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+							<div class="accord-p">
+								<dl class="dl-type3">
+									<dt>초진</dt>
+									<dd>외래창구에서 건강보험증, 요양급여의뢰서, 주민등록증을 접수 
+									창구에 제출하고 접수비를 납부하신 후 접수증을 발급받아 해당 진료과로 가시면 됩니다.
+									</dd>
+									<dt>재진</dt>
+									<dd>건강보험증, 진찰권을 접수 창구에 제출하고 접수비를 납부 하신 후 해당 진료과로 가시면 됩니다.</dd>
+								</dl>
+							</div>
+						</dd>
+						<!-- //accordion set -->
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>예약환자</span>
+							<span class="accordion-icon"></span></button>
+						</dt>
+						<dd id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+							<div class="accord-p">
+								<dl class="dl-type3">
+									<dt>진료비 수납환자</dt>
+									<dd>예약된 진료과로 직접 가서 진찰권과 진료예약증을 제출하시고, 진료를 받으시면 됩니다.</dd>
+									<dt>전화, 인터넷 예약환자</dt>
+									<dd>예약시간 전에 접수 창구에서 건강보험증, 주민등록증, 
+									요양급여의뢰서를 제출하고 접수비를 납부하신 후 해당 진료과로 
+									가시면 됩니다.
+									</dd>
+									<dd>
+										<div class="table-wrap">
+											<table>
+												<caption>외래접수시간, 외래진료시간, 전화예약 가능시간 테이블</caption>
+												<colgroup>
+													<col style="width:35%"/>
+													<col>
+												</colgroup>
+												<tbody>
+													<tr>
+														<th scope="row">외래접수시간</th>
+														<td class="textL">평일 08:00 ~16:30<br>
+														토요일 08:00 ~11:30
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">외래진료시간</th>
+														<td class="textL">평일오전 08:30 ~ 12:00<br>
+														평일오후 13:00 ~ 16:30<br>
+														토요일 08:30 ~ 12:00
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">전화예약</th>
+														<td class="textL">032-890-2000<br>
+															평일 08:00 ~ 18:00<br>
+															토요일 08:00 ~ 13:00
+													</tr>
+												</tbody>	
+											</table>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</dd>
+						<!-- //accordion set -->
+					</dl>
+				</div>
+				<!-- //accordion wrap -->
+			</div>
+			<!-- //cont -->
+		</div>
+		<!-- //cont-wrap -->
+		<!-- etc-wrap -->
+		<div class="etc-wrap">
+			<div class="text-small-type1">진료과 사정에 따라 마감시간이 변동될 수 있사오니 문의 후 내원하시기 바랍니다.</div>
+			<div class="text-small-type1">토요일은 일부 진료과에서 오전진료(08:30~12:00)를 시행합니다.</div>
+			<div class="text-small-type1">문의사항이 있으신 경우 전화주시기 바랍니다. (032-890-2000)</div>
+		</div>
+		<!-- //etc-wrap -->
+	</section>
+	
+</section>
+
+@@include('../inc/footer.html')
