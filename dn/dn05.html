@@ -1,5 +1,6 @@
 @@include('../inc/head.html')
 @@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
 <section class="container" id="container">
 	<!-- 타이틀영역 -->
 	<section class="pagetitle-wrap">
@@ -9,6 +10,7 @@
 		<h1 class="title-type1">순서도</h1>
 	</section>
 	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
 	<section class="contents-wrap">
 		<!-- cont-wrap -->
 		<div class="cont-wrap">
@@ -17,13 +19,131 @@
 			</div>
 			<!-- cont -->
 			<div class="cont">
-				
+				<div class="proce-wrap">
+					<ul class="proce-list">
+						<li>
+							<div class="procebox">
+								<span class="procebox-text">접수창구</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox">
+								<span class="procebox-text">해당과 진료</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox">
+								<span class="procebox-text">수납 (창구, 무인수납기)</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox type2">
+								<span class="procebox-text">귀가</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="title-type2">약 처방전이 있는 경우</div>
+			<!-- cont -->
+			<div class="cont">
+				<div class="proce-wrap">
+					<ul class="proce-list">
+						<li>
+							<div class="procebox">
+								<span class="procebox-text">수납 (창구, 무인수납기)</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox type3">
+								<span class="procebox-text">처방전 발급 (자동수납기)</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li><span>원외약국 구입</span></li>
+						<li>
+							<div class="procebox type2">
+								<span class="procebox-text">귀가</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- //cont -->
+			<div class="title-type2">주사, 검사가 있는 경우</div>
+			<!-- cont -->
+			<div class="cont">
+				<div class="proce-wrap">
+					<ul class="proce-list">
+						<li>
+							<div class="procebox">
+								<span class="procebox-text">수납 (창구, 무인수납기)</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox type3">
+								<span class="procebox-text">주사실, 검사실 (필요 시 예약)</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox type2">
+								<span class="procebox-text">귀가</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- //cont -->
+			<div class="title-type2">입원 시</div>
+			<!-- cont -->
+			<div class="cont">
+				<div class="proce-wrap">
+					<ul class="proce-list">
+						<li>
+							<div class="procebox type3">
+								<span class="procebox-text">입원결정</span>
+							</div>
+						</li>
+						<li>
+							<span class="proce-list-arr"></span>
+						</li>
+						<li>
+							<div class="procebox type3">
+								<span class="procebox-text">입원예약 / 수속</span>
+							</div>
+						</li>
+					</ul>
+
+				</div>
 			</div>
 			<!-- //cont -->
 		</div>
 		<!-- //cont-wrap -->
 	</section>
-	
+	<!-- //내용 전체 -->
 </section>
-
+<!-- //container : pagetitle + 내용 전체 -->
 @@include('../inc/footer.html')

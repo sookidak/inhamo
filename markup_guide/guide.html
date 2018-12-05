@@ -22,17 +22,18 @@
 			<li><a href="#guide-css">기본css</a></li>
 			<li><a href="#guide-color">컬러</a></li>
 			<li><a href="#guide-text">텍스트</a></li>
+			<li><a href="#guide-call">전화스타일</a></li>
 			<li><a href="#guide-badge">뱃지</a></li>
+			<li><a href="#guide-icon">아이콘</a></li>
 			<li><a href="#guide-btns">버튼</a></li>
-			<li><a href="#guide-input">입력박스</a></li>
-			<li><a href="#guide-select">선택박스</a></li>
 			<li><a href="#guide-component">컴포넌트</a></li>
 			<li><a href="#guide-agree">동의박스</a></li>
 			<li><a href="#guide-tab">탭</a></li>
 			<li><a href="#guide-table">테이블</a></li>
-			<li><a href="#guide-list">리스트</a></li>
-			<li><a href="#guide-err">에러박스</a></li>
-			<li><a href="#guide-etcbox">추가사항</a></li>
+			<li><a href="#guide-dllist">dl리스트</a></li>
+			<li><a href="#guide-ullist">ul리스트</a></li>
+			<li><a href="#guide-accordioin">아코디언</a></li>
+			<li><a href="#guide-etcbox">기타박스</a></li>
 		</ul>
 	</section>
 	<!-- css  가이드 -->
@@ -137,6 +138,22 @@
 					<xmp><div class="color-style4">#777777</div></xmp>
 				</td>
 			</tr>
+			<tr>
+				<th>
+					<div class="color-style5">#199da3</div>
+				</th>
+				<td>
+					<xmp><div class="color-style5">#199da3</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="color-style6">#cd0e0e</div>
+				</th>
+				<td>
+					<xmp><div class="color-style6">#cd0e0e</div></xmp>
+				</td>
+			</tr>
 		</table>
 	</section>
 	<!-- //컬러  가이드 -->
@@ -200,8 +217,8 @@
 		</table>
 	</section>
 	<!-- //텍스트 가이드 -->
-	<!-- badge  가이드 -->
-	<section class="guide-section" id="guide-badge">
+	<!-- 전화스타일  가이드 -->
+	<section class="guide-section" id="guide-call">
 		<h2 class="guide-title2">전화스타일 가이드</h2>
 		<table class="table-guide">
 			<tr>
@@ -273,7 +290,7 @@
 	</section>
 	<!-- //badge  가이드 -->
 	<!-- 아이콘  가이드 -->
-	<section class="guide-section" id="guide-badge" >
+	<section class="guide-section" id="guide-icon" >
 		<h2 class="guide-title2">아이콘 가이드</h2>
 		<table class="table-guide" style="background: #eee">
 			<tr>
@@ -699,7 +716,7 @@
 			<tr>
 				<td>
 					<xmp>
-<div class="table table-type1">
+<div class="table-wrap">
 	<table>
 		<caption>Type1</caption>
 		<colgroup>
@@ -722,7 +739,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>111</td>
+				<th scope="row">구분A-1</th>
 				<td>A</td>
 				<td>B</td>  
 				<td class="textL"><p class="badge badge-new">NEW</p>게시물 내용</td> 
@@ -730,7 +747,7 @@
 				<td>15,510</td>
 			</tr>   
 			<tr>     
-				<td>111</td>  
+				<th scope="row">구분B-1</th>  
 				<td>A</td>
 				<td>B</td>  
 				<td class="textL"><p class="badge badge-point">중요</p>게시물 내용</td>
@@ -749,17 +766,12 @@
 	<!-- //테이블 가이드 -->
 
 	<!-- dl 리스트  가이드 -->
-	<section class="guide-section" id="guide-list">
+	<section class="guide-section" id="guide-dllist">
 		<h2 class="guide-title2">dl 리스트 가이드</h2>
 		<dl class="dl-type1">
 			<dt>초진진료 예약안내</dt>
 			<dd>
 				저희 인하대병원은 상급종합병원으로서, 초진 진료 시, 원활한 진료를 위하여 1·2차 의료기관에서 발급한 '진료의뢰서(요양급여의뢰서)'를 반드시 지참하셔야 합니다.
-				<span class="text-small-type1">미 지참시 진료비는 보험수가 100% 전액본인부담 처리 됩니다.</span>
-				<ul class="list-type2">
-					<li>건강보험환자 : 1차의원 혹은 2차병원 진료의뢰서 지참</li>
-					<li>의료급여환자 : 반드시 2차 병원 진료의뢰서 지참(1차의원 진료의뢰서 불가)</li>
-				</ul>
 			</dd>
 		</dl>
 <div class="source-wrap">
@@ -768,193 +780,290 @@
 	<dt>초진진료 예약안내</dt>
 	<dd>
 		저희 인하대병원은 상급종합병원으로서, 초진 진료 시, 원활한 진료를 위하여 1·2차 의료기관에서 발급한 '진료의뢰서(요양급여의뢰서)'를 반드시 지참하셔야 합니다.
-		<span class="text-small-type1">미 지참시 진료비는 보험수가 100% 전액본인부담 처리 됩니다.</span>
-		<ul class="list-type2">
-			<li>건강보험환자 : 1차의원 혹은 2차병원 진료의뢰서 지참</li>
-			<li>의료급여환자 : 반드시 2차 병원 진료의뢰서 지참(1차의원 진료의뢰서 불가)</li>
-		</ul>
+	</dd>
+	<dd>
+		저희 인하대병원은 상급종합병원으로서, 초진 진료 시, 원활한 진료를 위하여 1·2차 의료기관에서 발급한 '진료의뢰서(요양급여의뢰서)'를 반드시 지참하셔야 합니다.
 	</dd>
 </dl>
 </xmp>
 </div>
 <br><br>
 <dl class="dl-type2">
-	<dt>진료직후 예약하실 경우</dt>
-	<dd>진료를 받으신 후 다음 진료 일자를 정하고 수납 창구에서 
-		접수비를 수납하시면 다음 예약 시간이 적힌 진료예약증을 
-		발급해 드립니다. 
-		예약 당일에는 해당 진료과로 직접 가셔서 진료 예약증을 
-		제시하고 진료를 받으시면 됩니다.
+	<dt>1. 입원결정</dt>
+	<dd>진료후 담당의사로부터 입원결정서를 발급받아 1층 
+			입원수속창구에 제출하시면 됩니다.
 	</dd>
-	<dt>전화예약 및 인터넷 예약</dt>
-	<dd>초진예약 하실 때와 동일하며 예약 담당자의 안내에 따르시면 됩니다.
+	<dt>2. 입원수속</dt>
+	<dd>
+		<dl class="dl-type3">
+			<dt>당일입원</dt>
+			<dd>입원수속창구에서 입원약정서(상급병실 이용 및 선택진료 신청 등)을 작성한 후 건강보험증과 함꼐 제출하시면 됩니다.<br>
+			입원 수속 완료 후 입원 생활안내문과 환자 팔찌를 수령하고, 해당병동으로 가셔서 간호사에게 병실로 안내를 받으시면 됩니다. 병실을 배정받으시면 간호사와 병실 생활 안내에 따르십시오.</dd>
+			<dt>예약입원</dt>
+			<dd>수술일정이나 본인의 사정 또는 병실이 부족할 경우 입원 예약을 합니다.
+			입원수속창구에서 입원 예약을 하시고 예약 접수증 및 약정서를 받아 귀가 하시면 됩니다.
+			입원 예약 당일 환자에게 유선 통보를 해드리며(도착시간 및 병실 등) 내원 시 작성 해오신 입원약정서를 건강보험증과 함께 제출하시면 됩니다.
+			</dd>
+		</dl>
 	</dd>
+	<dt>입원시 물품</dt>
+	<dd>개인 세면도구(수건, 칫솔, 치약, 비누, 개인용 크리넥스), 슬리퍼, 물컵, 보호자용 이불 및 베개, 등</dd>
 </dl>
 <div class="source-wrap">
 <xmp>
 <dl class="dl-type2">
-	<dt>진료직후 예약하실 경우</dt>
-	<dd>진료를 받으신 후 다음 진료 일자를 정하고 수납 창구에서 
-		접수비를 수납하시면 다음 예약 시간이 적힌 진료예약증을 
-		발급해 드립니다. 
-		예약 당일에는 해당 진료과로 직접 가셔서 진료 예약증을 
-		제시하고 진료를 받으시면 됩니다.
+	<dt>1. 입원결정</dt>
+	<dd>진료후 담당의사로부터 입원결정서를 발급받아 1층 
+			입원수속창구에 제출하시면 됩니다.
 	</dd>
-	<dt>전화예약 및 인터넷 예약</dt>
-	<dd>초진예약 하실 때와 동일하며 예약 담당자의 안내에 따르시면 됩니다.
+	<dt>2. 입원수속</dt>
+	<dd>
+		<dl class="dl-type3">
+			<dt>당일입원</dt>
+			<dd>입원수속창구에서 입원약정서(상급병실 이용 및 선택진료 신청 등)을 작성한 후 건강보험증과 함꼐 제출하시면 됩니다.<br>
+			입원 수속 완료 후 입원 생활안내문과 환자 팔찌를 수령하고, 해당병동으로 가셔서 간호사에게 병실로 안내를 받으시면 됩니다. 병실을 배정받으시면 간호사와 병실 생활 안내에 따르십시오.</dd>
+			<dt>예약입원</dt>
+			<dd>수술일정이나 본인의 사정 또는 병실이 부족할 경우 입원 예약을 합니다.
+			입원수속창구에서 입원 예약을 하시고 예약 접수증 및 약정서를 받아 귀가 하시면 됩니다.
+			입원 예약 당일 환자에게 유선 통보를 해드리며(도착시간 및 병실 등) 내원 시 작성 해오신 입원약정서를 건강보험증과 함께 제출하시면 됩니다.
+			</dd>
+		</dl>
+	</dd>
+	<dt>입원시 물품</dt>
+	<dd>개인 세면도구(수건, 칫솔, 치약, 비누, 개인용 크리넥스), 슬리퍼, 물컵, 보호자용 이불 및 베개, 등</dd>
+</dl>
+</xmp>
+</div>
+<br><br>
+<dl class="dl-type3">
+	<dt>당일입원</dt>
+	<dd>입원수속창구에서 입원약정서(상급병실 이용 및 선택진료 신청 등)을 작성한 후 건강보험증과 함꼐 제출하시면 됩니다.<br>
+	입원 수속 완료 후 입원 생활안내문과 환자 팔찌를 수령하고, 해당병동으로 가셔서 간호사에게 병실로 안내를 받으시면 됩니다. 병실을 배정받으시면 간호사와 병실 생활 안내에 따르십시오.</dd>
+	<dt>예약입원</dt>
+	<dd>수술일정이나 본인의 사정 또는 병실이 부족할 경우 입원 예약을 합니다.
+	입원수속창구에서 입원 예약을 하시고 예약 접수증 및 약정서를 받아 귀가 하시면 됩니다.
+	입원 예약 당일 환자에게 유선 통보를 해드리며(도착시간 및 병실 등) 내원 시 작성 해오신 입원약정서를 건강보험증과 함께 제출하시면 됩니다.
+	</dd>
+</dl>
+<div class="source-wrap">
+<xmp>
+<dl class="dl-type3">
+	<dt>당일입원</dt>
+	<dd>입원수속창구에서 입원약정서(상급병실 이용 및 선택진료 신청 등)을 작성한 후 건강보험증과 함꼐 제출하시면 됩니다.<br>
+	입원 수속 완료 후 입원 생활안내문과 환자 팔찌를 수령하고, 해당병동으로 가셔서 간호사에게 병실로 안내를 받으시면 됩니다. 병실을 배정받으시면 간호사와 병실 생활 안내에 따르십시오.</dd>
+	<dt>예약입원</dt>
+	<dd>수술일정이나 본인의 사정 또는 병실이 부족할 경우 입원 예약을 합니다.
+	입원수속창구에서 입원 예약을 하시고 예약 접수증 및 약정서를 받아 귀가 하시면 됩니다.
+	입원 예약 당일 환자에게 유선 통보를 해드리며(도착시간 및 병실 등) 내원 시 작성 해오신 입원약정서를 건강보험증과 함께 제출하시면 됩니다.
 	</dd>
 </dl>
 </xmp>
 </div>
 	</section>
 	<!-- //dl 리스트  가이드 -->
+	<!-- ul 리스트  가이드 -->
+	<section class="guide-section" id="guide-ullist">
+		<h2 class="guide-title2">ul 리스트 가이드</h2>
+		<ul class="list-type1">
+			<li>단, 응급환자, 분만, 치과, 재활의학과, 가정의학과, 혈우병 등은 
+				요양급여의뢰서가 필요없이 상급종합병원에서 바로 진료를 
+				볼 수 있습니다.</li>
+			<li>요양급여의뢰서 대신 1단계에서 발급한 의사소견이 적힌 건강진단 
+				또는 건강검진결과서도 가능합니다.
+			</li>
+			<li>만약 요양급여의뢰서를 지참하지 않으실 경우 당일 진료비는 
+			보험수가 100%로 전액 본인부담 처리됩니다.</li>
+			<li>요양급여의뢰서가 필요한 경우</li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type1">
+	<li>단, 응급환자, 분만, 치과, 재활의학과, 가정의학과, 혈우병 등은 
+		요양급여의뢰서가 필요없이 상급종합병원에서 바로 진료를 
+		볼 수 있습니다.</li>
+	<li>요양급여의뢰서 대신 1단계에서 발급한 의사소견이 적힌 건강진단 
+		또는 건강검진결과서도 가능합니다.
+	</li>
+	<li>만약 요양급여의뢰서를 지참하지 않으실 경우 당일 진료비는 
+	보험수가 100%로 전액 본인부담 처리됩니다.</li>
+	<li>요양급여의뢰서가 필요한 경우</li>
+</ul>
+</xmp>
+</div>
+<br><br>
+<ul class="list-type2">
+	<li>본원을 최초로 이용하시는 환자 (신규환자)</li>
+	<li>본원 이용 중 타과 진료과 필요하신 환자 (과초진)</li>
+</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type2">
+	<li>본원을 최초로 이용하시는 환자 (신규환자)</li>
+	<li>본원 이용 중 타과 진료과 필요하신 환자 (과초진)</li>
+</ul>
+</xmp>
+</div>
+<br><br>
+<ul class="list-type-inner">
+	<li>1) 감기나 인플루엔자, 결핵 등 호흡기 질환이 있으신 분</li>
+	<li>2) 장 관련 급성 감염 증상(설사, 복통, 구토 등)이 있는 분</li>
+	<li>3) 눈병 · 피부병 등을 앓고 있는 분</li>
+	<li>4) 감염성 질환을 앓고 있거나, 최근 감염성 질환자와 접촉한 적이 있는 분</li>
+</ul>
+<ul class="list-type-inner">
+	<li>① 외래창구에 건강보험증, 주민등록증, 요양급여의뢰서 등을 제출합니다.</li>
+	<li>② 접수비를 수납하시면 진료접수증과 진료비계산서를 드립니다.</li>
+	<li>③ 요양급여의뢰서를 지참하신 분은 진료의뢰센터를 이용하시면 좀더 편리하게 이용 하실 수 있습니다.</li>
+</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type-inner">
+	<li>본원을 최초로 이용하시는 환자 (신규환자)</li>
+	<li>본원 이용 중 타과 진료과 필요하신 환자 (과초진)</li>
+</ul>
+<Br>
+<ul class="list-type-inner">
+	<li>① 외래창구에 건강보험증, 주민등록증, 요양급여의뢰서 등을 제출합니다.</li>
+	<li>② 접수비를 수납하시면 진료접수증과 진료비계산서를 드립니다.</li>
+	<li>③ 요양급여의뢰서를 지참하신 분은 진료의뢰센터를 이용하시면 좀더 편리하게 이용 하실 수 있습니다.</li>
+</ul>
+</xmp>
+</div>
+	</section>
+	<!-- //ul 리스트  가이드 -->
 
 <!-- 아코디언  가이드 -->
-<section class="guide-section" id="guide-list">
+<section class="guide-section" id="guide-accordioin">
 		<h2 class="guide-title2">아코디언 가이드</h2>
 		<!-- accordion wrap -->
 		<div class="accordion-wrap">
-			<!-- accordion set -->
-			<!-- 아코디언 열릴때 active 클래스 추가 ₩-->
-			<dl class="accordion" id="accordionGroup"
-			role="presentation">
-				<!-- accordion top -->
-				<dt role="heading" aria-level="3">
-					<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true"><span>진료협력팀</span>
-					<span class="accordion-icon"></span></button>
-				</dt>
-				<!-- //accordion top -->
-				<!-- accordion bottom -->
-				<dd id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
-					<div class="accord-p">
-						<div class="title-type4">진료협력팀</div>
-						<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-					</div>
-					<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-					진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-					해드리겠습니다.<br>
-					1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-					CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
-					</div>
-				</dd>
-				<!-- //accordion bottom -->
-				<!-- accordion top -->
-				<dt role="heading" aria-level="3">
-					<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>진료협력팀</span>
-					<span class="accordion-icon"></span></button>
-				</dt>
-				<!-- //accordion top -->
-				<!-- accordion bottom -->
-				<dd id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
-					<div class="accord-p">
-						<div class="title-type4">진료협력팀</div>
-						<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-					</div>
-					<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-					진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-					해드리겠습니다.<br>
-					1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-					CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
-					</div>
-				</dd>
-				<!-- //accordion bottom -->
-				<!-- accordion top -->
-				<dt role="heading" aria-level="3">
-					<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id" ><span>진료협력팀</span>
-					<span class="accordion-icon"></span></button>
-				</dt>
-				<!-- //accordion top -->
-				<!-- accordion bottom -->
-				<dd id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
-					<div class="accord-p">
-						<div class="title-type4">진료협력팀</div>
-						<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-					</div>
-					<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-					진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-					해드리겠습니다.<br>
-					1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-					CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
-					</div>
-				</dd>
-				<!-- //accordion bottom -->
-			</dl>
-			<!-- //accordion set -->
-			
-		</div>
-		<!-- //accordion wrap -->
+				<dl class="accordion" id="accordionGroup" role="presentation">
+					<!-- accordion set -->
+					<dt role="heading">
+						<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true">
+							<span>진료협력팀</span>
+							<span class="accordion-icon"></span>
+						</button>
+					</dt>
+					<dd id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+						<div class="accord-p">
+							<dl class="dl-type3">
+								<dt>진료협력팀
+									<div class="tel-wrap">
+										<a href="tel:0328903500"  class="tel-number">032-890-3500</a>
+										<button type="button" class="btn-tel">
+											<span class="icon icon-tel"></span>
+											<span class="offscreen">전화걸기</span>
+										</button>
+									</div>
+								</dt>
+								<dd>진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 해드리겠습니다.<br>
+								1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.</dd>
+							</dl>
+						</div>
+					</dd>
+					<!-- //accordion set -->
+					<!-- accordion set -->
+					<dt role="heading">
+						<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>방문예약</span>
+						<span class="accordion-icon"></span></button>
+					</dt>
+					<dd id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+						<div class="accord-p">진료신청서를 작성하여 접수 창구에 건강보험증, 주민등록증, 요양 급여의뢰서를 제시하고 접수비를 납부하신 후 진찰권과 진료예약증을 발급받아 예약 일자에 해당 진료과 접수 창구에 접수 하시면 됩니다.
+						</div>
+					</dd>
+					<!-- //accordion set -->
+					<!-- accordion set -->
+					<dt role="heading">
+						<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id" ><span>전화예약</span>
+						<span class="accordion-icon"></span></button>
+					</dt>
+					<dd id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+						<div class="accord-p">
+							<dl class="dl-type3">
+								<dt>전화예약
+									<div class="tel-wrap">
+										<a href="tel:032-890-2000"  class="tel-number">032-890-2000</a>
+										<button type="button" class="btn-tel">
+											<span class="icon icon-tel"></span>
+											<span class="offscreen">전화걸기</span>
+										</button>
+									</div>
+								</dt>
+								<dd>전화예약 담당자의 안내에 따라 예약하시고, 예약 일자에 1층 접수 창구에서 전화예약임을 알리고 건강보험증, 요양급여의뢰서, 주민등록증을 제시하시고 접수비를 납부하신 후 진찰권을 발급받아 해당과 접수 창구로 가시면 됩니다.<br>
+								사전 전화예약을 못하신 경우는 진료당일에 예약도 가능합니다.</dd>
+							</dl>
+						</div>
+					</dd>
+					<!-- //accordion set -->
+				</dl>
+			</div>
+			<!-- //accordion wrap -->
 		<br><br>
 <div class="source-wrap">
 <xmp>
 <!-- accordion wrap -->
 <div class="accordion-wrap">
-	<!-- accordion set -->
-	<!-- 아코디언 열릴때 active 클래스 추가 ₩-->
-	<dl class="accordion" id="accordionGroup"
-	role="presentation">
-		<!-- accordion top -->
-		<dt role="heading" aria-level="3">
-			<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true"><span>진료협력팀</span>
-			<span class="accordion-icon"></span></button>
+	<dl class="accordion" id="accordionGroup" role="presentation">
+		<!-- accordion set -->
+		<dt role="heading">
+			<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true">
+				<span>진료협력팀</span>
+				<span class="accordion-icon"></span>
+			</button>
 		</dt>
-		<!-- //accordion top -->
-		<!-- accordion bottom -->
 		<dd id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
 			<div class="accord-p">
-				<div class="title-type4">진료협력팀</div>
-				<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-			</div>
-			<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-			진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-			해드리겠습니다.<br>
-			1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-			CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
+				<dl class="dl-type3">
+					<dt>진료협력팀
+						<div class="tel-wrap">
+							<a href="tel:0328903500"  class="tel-number">032-890-3500</a>
+							<button type="button" class="btn-tel">
+								<span class="icon icon-tel"></span>
+								<span class="offscreen">전화걸기</span>
+							</button>
+						</div>
+					</dt>
+					<dd>진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 해드리겠습니다.<br>
+					1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.</dd>
+				</dl>
 			</div>
 		</dd>
-		<!-- //accordion bottom -->
-		<!-- accordion top -->
-		<dt role="heading" aria-level="3">
-			<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>진료협력팀</span>
+		<!-- //accordion set -->
+		<!-- accordion set -->
+		<dt role="heading">
+			<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>방문예약</span>
 			<span class="accordion-icon"></span></button>
 		</dt>
-		<!-- //accordion top -->
-		<!-- accordion bottom -->
 		<dd id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
-			<div class="accord-p">
-				<div class="title-type4">진료협력팀</div>
-				<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-			</div>
-			<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-			진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-			해드리겠습니다.<br>
-			1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-			CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
+			<div class="accord-p">진료신청서를 작성하여 접수 창구에 건강보험증, 주민등록증, 요양 급여의뢰서를 제시하고 접수비를 납부하신 후 진찰권과 진료예약증을 발급받아 예약 일자에 해당 진료과 접수 창구에 접수 하시면 됩니다.
 			</div>
 		</dd>
-		<!-- //accordion bottom -->
-		<!-- accordion top -->
-		<dt role="heading" aria-level="3">
-			<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id" ><span>진료협력팀</span>
+		<!-- //accordion set -->
+		<!-- accordion set -->
+		<dt role="heading">
+			<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id" ><span>전화예약</span>
 			<span class="accordion-icon"></span></button>
 		</dt>
-		<!-- //accordion top -->
-		<!-- accordion bottom -->
 		<dd id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
 			<div class="accord-p">
-				<div class="title-type4">진료협력팀</div>
-				<span class=""><a href="tel:0328903500">032-890-3500</a></span>
-			</div>
-			<div class="accord-p">진료협력팀에서는 1·2차 의료기관에서 진료의뢰서를 받고 초진 예약을 하셔야 하는 환자분께 직접 '진료예약' 서비스를 제공하고 있습니다. 
-			진료협력팀으로 연락 주시면 전문 간호사가 상담 후 진료예약을 
-			해드리겠습니다.<br>
-			1·2차 의료기관에서 제공 받으신 자료(의뢰서/소견서/검사결과지/
-			CD 영상복사물 등)는 모두 소지하시고 진료예약 시간 20분전에 1층 진료협력센터로 방문해 주시기 바랍니다.
+				<dl class="dl-type3">
+					<dt>전화예약
+						<div class="tel-wrap">
+							<a href="tel:032-890-2000"  class="tel-number">032-890-2000</a>
+							<button type="button" class="btn-tel">
+								<span class="icon icon-tel"></span>
+								<span class="offscreen">전화걸기</span>
+							</button>
+						</div>
+					</dt>
+					<dd>전화예약 담당자의 안내에 따라 예약하시고, 예약 일자에 1층 접수 창구에서 전화예약임을 알리고 건강보험증, 요양급여의뢰서, 주민등록증을 제시하시고 접수비를 납부하신 후 진찰권을 발급받아 해당과 접수 창구로 가시면 됩니다.<br>
+					사전 전화예약을 못하신 경우는 진료당일에 예약도 가능합니다.</dd>
+				</dl>
 			</div>
 		</dd>
-		<!-- //accordion bottom -->
+		<!-- //accordion set -->
 	</dl>
-	<!-- //accordion set -->
-	
 </div>
 <!-- //accordion wrap -->
 </xmp>
@@ -1039,40 +1148,6 @@
 </xmp>
 </div>
 <br><br>
-	<div class="etcbox">
-		<div class="etcbox-title">암진료 상담실</div>
-		<div class="etcbox-cont">
-			암 환자나 암 질환이 의심되는 분은 암진료 상담실로 연락주시면 상담을 통하여 신속하게 진료를 받을 수 있도록 도와드립니다.
-		</div>
-		<div class="etcbox-list">
-			<ul >
-				<li>
-					<a class="tel-number"href="tel:0328903500">032-890-3500</a>
-					<button type="button" class="btn-tel" link="tel:0328903500">
-						<span class="icon icon-tel"></span>
-						<span class="offscreen">전화걸기</span>
-					</button>
-				</li>
-				<li>
-					<a class="tel-number"href="tel:0328903500">032-890-3500</a>
-					<button type="button" class="btn-tel">
-						<span class="icon icon-tel"></span>
-						<span class="offscreen">전화걸기</span>
-					</button>
-				</li>
-				<li>
-					<a class="tel-number"href="tel:0328903500">032-890-3500</a>
-					<button type="button" class="btn-tel">
-						<span class="icon icon-tel"></span>
-						<span class="offscreen">전화걸기</span>
-					</button>
-				</li>
-			</ul>
-		</div>
-		<div class="btn-wrap">
-			<button type="button" class="btn btn-l color01">암진료 상담실 바로가기</button>
-		</div>
-	</div>
 </section>
 <!-- //etcbox 가이드 -->
 
