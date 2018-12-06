@@ -278,6 +278,10 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .board-file-wrap .list-type1 li{line-height:21px;margin-bottom:0;}
 .board-file-wrap .list-type1 li a{border-bottom:1px solid #aaa}
 
+.board-info2 li{font-size:13px;color:#777;margin-bottom:8px}
+.board-info2 li .info2-tit{color:#333;font-weight:bold;margin-right:6px;}
+.board-info2 li:last-child{margin-bottom:0;}
+
 /* nodata */
 .nodata-wrap{min-height:280px;text-align:center;border-bottom:1px solid #eee;}
 .icon-nodata{text-align:center;padding-top:76px;}
