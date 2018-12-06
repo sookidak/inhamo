@@ -41,6 +41,17 @@
 .icon.icon-steth:before{width:27.5px;height:25px;background-position:-50px -100px;}
 .icon.icon-person:before{width:25px;height:28px;background-position:-50px -150px;}
 .icon.icon-cscenter:before{width:35px;height:31.5px;background-position:-50px -200px;}
+.icon.icon-i{position:relative;}
+
+.icon.icon-i:before{width:20.5px;height:20.5px;background-position:-100px 0}
+
+
+
+.icon.icon-phone{height:46px;}
+.icon.icon-phone:before{background:url('../img/icon_member.png') left top no-repeat;background-size:200px 200px;width:30px;height:46px;}
+.icon.icon-ipin{height:41px;width:42px;}
+.icon.icon-ipin:before{background:url('../img/icon_member.png') -50px top no-repeat;background-size:200px 200px;width:42px;height:41px;}
+
 
 
 .NotoKrL{font-family: 'NotoKrL';} 
@@ -83,6 +94,8 @@ select{ border:1px solid #ddd;font-size:13px;line-height:22px;font-family:'NotoK
 select::-ms-expand { display:none;}
 select:disabled{ border-color:#eee;color:#777;background:#f8f8f8;}
 select:focus{ outline:none;border-color:#199da3;font-family:'NotoKrR';color:#000;background:url(../img/icon_components_select_on.png) right -40px top 50% no-repeat}
+
+textarea{border:1px solid #ddd;padding:14px;display:block;width:100%;font-size:12px;color:#777;}
 
 /* 버튼 */
 .btn{display:inline-block;width:50%;height:40px;line-height:40px;color:#fff;font-size:14px;font-family: 'NotoKrR';padding:0 20px;text-align:center;}
@@ -141,10 +154,10 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .checkbox{position:relative;display:inline-block;vertical-align:middle;margin-right:10px;}
 .checkbox input[type=checkbox]{position:absolute;left:0;top:0;}
 .checkbox label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
-.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') -40px 0px;cursor:pointer;z-index:10;}
-.checkbox input[type=checkbox]:checked +label:before{background-position:-40px -40px;}
-.checkbox input[type=checkbox]:disabled +label:before{background-position:-40px -80px;}
-.checkbox input[type=checkbox]:disabled:checked +label:before{background-position:-40px -120px;}
+.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') 0px 0px;cursor:pointer;z-index:10;background-size:240px 240px}
+.checkbox input[type=checkbox]:checked +label:before{background-position:0px -40px;}
+.checkbox input[type=checkbox]:disabled +label:before{background-position:0px -80px;}
+.checkbox input[type=checkbox]:disabled:checked +label:before{background-position:0px -120px;}
 
 /* checkbox-type2 */
 .checkbox-type2{position:relative;display:inline-block;vertical-align:middle;margin-right:10px;}
@@ -367,6 +380,13 @@ table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;
 .etcbox-list li:after{content:'';display:block;clear:both;}
 .etcbox-list li .tel-number{display:inline-block;width:calc(100% - 45px);float:left;line-height:45px;vertical-align: middle}
 .etcbox-list li .tel-number +.btn-tel{float:right;margin-left:0;vertical-align: middle;padding:10px;width:45px;height:45px;}
+
+.etcbox.type2 .etcbox-title{position:relative;line-height:20px;vertical-align: middle}
+.etcbox.type2 .etcbox-title:before{content:'';display:inline-block;width:20.5px;height:20.5px;background: url('../img/icon_common.png') -100px 0;background-size:300px 300px;vertical-align: top;margin-right:5px;}
+.etcbox.type2 .etcbox-list{text-align:left;margin-left:18px;margin-top:10px;}
+.etcbox.type2 .etcbox-list li{padding-left:8px;position: relative;margin-bottom:7px;font-size:12px;color:#333;border:none;line-height:1.4;}
+.etcbox.type2 .etcbox-list li:before{content:'';display:inline-block;position:absolute;left:0;top:6px;width:3px;height:3px;background:#aaa;border-radius:3px;}
+
 /* etcbox 간격조절 */
 .etcbox-title + .etcbox-cont{margin-top:10px;}
 .etcbox .etcbox-cont+.etcbox-list{margin-top:10px;}
@@ -402,7 +422,41 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .dr-list>dd{margin-bottom:20px;}
 .dr-list>dd:last-child{margin-bottom:0px;}
 .dr-row>span{vertical-align: middle;}
-
 .dr-list.type2 dd{color:#777;font-size:12px;}
 
 .badge.type2{display:inline-block;min-width:46px;height:20px;line-height:19px;color:#fff;font-size:14px;border-radius:10px;padding:0 6px;width:auto;}
+
+/* 회원가입 - 약관동의*/
+.stepview-wrap{margin-bottom:25px;}
+.step{position:relative;display:block;margin-bottom:15px;}
+.step ul{position:relative;left:50%;transform: translateX(-50%);display:inline-block;overflow:hidden}
+.step ul li{float:left;margin-right:38px;position:relative;}
+.step ul li.active .step-one,.step ul li.complete .step-one{background:#0770bb;font-weight:bold}
+
+.step ul li.complete .step-one:before{content:'';display:inline-block;position:absolute;left:50%;top:50%;background:#0770bb url('../img/icon_member.png') -100px 0 no-repeat;background-size:200px 200px;width:17.5px;height:14px;z-index:1;transform: translate(-50%,-50%)}
+
+.step ul li:after{content:'...';display:inline-block;color:#aaa;letter-spacing:2px;position:absolute;top:50%;right:-40px;width:40px;height:0;font-size:28px;line-height:0;margin-top:-9px;text-align:center;}
+.step ul li:last-child{margin-right:0;}
+.step-one{position:relative;display:inline-block;width:30px;height:30px;line-height:28px;text-align:center;background:#777;color:#fff;border-radius:50%;font-size:14px}
+.step-midline{position:absolute;left:0;right:0;top:50%;height:0px;display:block;border-top:3px dotted #aaa;margin-top:-2px;}
+.step-text{text-align:center;font-size:14px;color:#333;font-family: 'NotoKrR';line-height:1.3;}
+
+.terms-cont{margin-top:13px;}
+.terms-box textarea{height:100px;}
+.terms-check{margin-top:10px}
+.terms-box + .terms-box{margin-top:25px;}
+
+/* 본인인증 */
+.certi-wrap{}
+.member-btnlist li{margin-bottom:10px}
+.member-btnlist .btn{position:relative;height:75px;border-radius:16px 0 0 0;border:1px solid #ddd;background:#fff;color:#333;font-size:15px;font-family: 'NotoKrR'}
+.member-btnlist .btn:hover,.member-btnlist .btn.active{height:75px;border-radius:16px 0 0 0;border:1px solid #fff;color:#fff;
+background: #0770bb; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #0770bb 0%, #138faa 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #0770bb 0%,#138faa 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
+}
+.member-btnlist .btn .icon{position:absolute;left:37px;top:50%;transform: translateY(-50%)}
+.member-btnlist .btn:hover .icon:before,.member-btnlist .btn.active .icon:before{background-position-y: -50px}
+
+/* 회원정보입력 */
