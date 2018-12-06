@@ -399,5 +399,6 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .dr-list>dd:last-child{margin-bottom:0px;}
 .dr-row>span{vertical-align: middle;}
 
+.dr-list.type2 dd{color:#777;font-size:12px;}
 
 .badge.type2{display:inline-block;min-width:46px;height:20px;line-height:19px;color:#fff;font-size:14px;border-radius:10px;padding:0 6px;width:auto;}
