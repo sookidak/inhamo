@@ -3,10 +3,11 @@
 	table.table-guide>tbody>tr>th,table.table-guide>tbody>tr> td{border:1px solid #ccc;padding:5px;font-size:13px}
 	.guide{padding:20px;width:100%;margin:0 auto 0;}
 	.guide-title{width:100%;background:#fff;height:80px;line-height:80px;font-size:30px;margin-bottom:30px;text-align: center;font-weight: bold}
-	.guide-title2{font-size:24px;margin-bottom:10px;font-weight: bold;padding-top:45px;}
+	.guide-title2{font-size:24px;margin-bottom:20px;font-weight: bold;padding-top:45px;}
+	.guide-title3{font-size:16px;margin-bottom:10px;font-weight: bold;}
 	.table-guide{width:100%;}
 	.guide-section{margin-bottom:30px;}
-	.guide-nav{margin-bottom:20px; position: fixed; top:0px}
+	.guide-nav{margin-bottom:20px; position: fixed; top:0px;z-index:100;}
 	.guide-nav:after{content:'';display:block;clear: both;width:100%;}
 	.guide-nav li{vertical-align:middle;height:40px;background:#3d4044; line-height: 40px;float:left;}
 	.guide-nav li:hover{background:#199da3;}
@@ -27,6 +28,7 @@
 			<li><a href="#guide-icon">아이콘</a></li>
 			<li><a href="#guide-btns">버튼</a></li>
 			<li><a href="#guide-component">컴포넌트</a></li>
+			<li><a href="#guide-form">폼</a></li>
 			<li><a href="#guide-agree">동의박스</a></li>
 			<li><a href="#guide-tab">탭</a></li>
 			<li><a href="#guide-table">테이블</a></li>
@@ -642,9 +644,122 @@
 </xmp>
 				</td>
 			</tr>
+			<tr>
+				<th>
+					<select name="" id="email-sel">
+						<option value="">직접입력</option>
+						<option value="">naver.com</option>
+					</select>
+				</th>
+				<td>
+					<xmp>
+<select name="" id="email-sel">
+	<option value="">직접입력</option>
+	<option value="">naver.com</option>
+</select>
+					</xmp>
+				</td>
+			</tr>
 		</table>
+
 	</section>
 	<!-- //컴포넌트 가이드 -->
+	<!-- 인풋 폼 가이드 -->
+	<section class="guide-section" id="guide-form">
+		<h2 class="guide-title2">폼 가이드</h2>
+		<h3 class="guide-title3">아이디, 인풋 + 버튼 일때 어디든 가능</h3>
+		<div>
+			<div class="input-set">
+				<label for="id" class="offscreen">아이디</label>
+				<input type="text" id="id" placeholder="아이디" >
+				<button type="button" class="btn color01">중복확인</button>
+			</div>
+		</div>
+		<br><br>
+<div class="source-wrap">
+<xmp>
+<div class="input-set">
+	<label for="id" class="offscreen">아이디</label>
+	<input type="text" id="id" placeholder="아이디" >
+	<button type="button" class="btn color01">중복확인</button>
+</div>
+</xmp>
+</div>
+	<br><br>
+		<h3 class="guide-title3">이메일</h3>
+			<div>
+				<div class="input-email">
+					<ul>
+						<li>
+							<label for="email" class="offscreen">이메일</label><input type="password" id="email" placeholder="비밀번호 확인" ><span class="email-i">@</span><input type="text" ></li>
+						<li>
+							<label for="email-sel" class="offscreen">이메일 선택</label>
+							<select name="" id="email-sel">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="input-email">
+	<ul>
+		<li>
+			<label for="email" class="offscreen">이메일</label><input type="password" id="email" placeholder="비밀번호 확인" ><span class="email-i">@</span><input type="text" ></li>
+		<li>
+			<label for="email-sel" class="offscreen">이메일 선택</label>
+			<select name="" id="email-sel">
+				<option value="">직접입력</option>
+				<option value="">naver.com</option>
+			</select>
+		</li>
+	</ul>
+</div>
+</xmp>
+</div>
+	<br><br>
+	<h3 class="guide-title3">주소 폼</h3>
+	<div>
+		<div class="input-address">
+			<ul>
+				<li>
+					<div class="input-set">
+					<label for="name" class="offscreen">우편번호</label>
+					<input type="text" id="address-num" placeholder="우편번호" disabled>
+					<button type="button" class="btn color01">우편번호 찾기</button>
+					</div>
+				</li>
+				<li>
+					<input type="text" placeholder="기본주소" disabled>
+				</li>
+				<li><input type="text" placeholder="상세주소" ></li>
+			</ul>
+		</div>
+	</div>
+	<br><br>
+	<div class="source-wrap">
+	<xmp>
+	<div class="input-address">
+		<ul>
+			<li>
+				<div class="input-set">
+				<label for="name" class="offscreen">우편번호</label>
+				<input type="text" id="address-num" placeholder="우편번호" disabled>
+				<button type="button" class="btn color01">우편번호 찾기</button>
+				</div>
+			</li>
+			<li>
+				<input type="text" placeholder="기본주소" disabled>
+			</li>
+			<li><input type="text" placeholder="상세주소" ></li>
+		</ul>
+	</div>
+	</xmp>
+	</div>
+	</section>
+	<!-- 인풋 폼 가이드 -->
 	<!-- 탭 가이드 -->
 	<section class="guide-section" id="guide-tab">
 		<h2 class="guide-title2">탭가이드</h2>
@@ -705,7 +820,7 @@
 								<col style="width:10%"/>
 								<col style="width:10%"/>
 								<col style="width:10%"/>
-								<col style="width:;"/>
+								<col/>
 								<col style="width:10%"/>
 								<col style="width:10%"/>
 							</colgroup> 
@@ -751,7 +866,7 @@
 			<col style="width:10%"/>
 			<col style="width:10%"/>
 			<col style="width:10%"/>
-			<col style="width:;"/>
+			<col/>
 			<col style="width:10%"/>
 			<col style="width:10%"/>
 		</colgroup> 
