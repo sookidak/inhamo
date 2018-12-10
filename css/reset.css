@@ -4,7 +4,7 @@
 	font-family: 'NotoKrL';
 	font-style: normal;
 	font-weight: 300;
-	src: url('../fonts/notokr/NotoSans-Light.eot');
+	src: url('../fonts/NotoSans-Light.eot');
 	src: url('../fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-Light.woff2') format('woff2'),
 		 url('../fonts/NotoSans-Light.woff') format('woff');
@@ -13,7 +13,7 @@
 	font-family: 'NotoKrDL';
 	font-style: normal;
 	font-weight: 100;
-	src: url('../fonts/notokr/NotoSans-DemiLight.eot');
+	src: url('../fonts/NotoSans-DemiLight.eot');
 	src: url('../fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-DemiLight.woff2') format('woff2'),
 		 url('../fonts/NotoSans-DemiLight.woff') format('woff');
@@ -22,7 +22,7 @@
 	font-family: 'NotoKrR';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/notokr/NotoSans-Regular.eot');
+	src: url('../fonts/NotoSans-Regular.eot');
 	src: url('../fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-Regular.woff2') format('woff2'),
 		 url('../fonts/NotoSans-Regular.woff') format('woff');
@@ -31,7 +31,7 @@
 	font-family: 'NotoKrM';
 	font-style: normal;
 	font-weight: 500;
-	src: url('../fonts/notokr/NotoSans-Medium.eot');
+	src: url('../fonts/NotoSans-Medium.eot');
 	src: url('../fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-Medium.woff2') format('woff2'),
 		 url('../fonts/NotoSans-Medium.woff') format('woff');
@@ -40,7 +40,7 @@
 	font-family: 'NotoKrB';
 	font-style: normal;
 	font-weight: 700;
-	src: url('../fonts/notokr/NotoSans-Bold.eot');
+	src: url('../fonts/NotoSans-Bold.eot');
 	src: url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
 		 url('../fonts/NotoSans-Bold.woff2') format('woff2'),
 		 url('../fonts/NotoSans-Bold.woff') format('woff');
@@ -155,6 +155,8 @@ table {
 input, select {
 	vertical-align:middle;
 	font-size:initial;
+	-webkit-appearance: none;
+   -webkit-border-radius: 0;
 }
 em{font-style:normal}
 sub,sup{
@@ -182,13 +184,13 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button;
 	cursor: pointer;
 	padding: 0;
 	background:transparent;
+	border:none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
 }
-button,
-[type="button"]{border:none;}
 legend {
 	box-sizing: border-box;
 	color: inherit;
@@ -202,4 +204,4 @@ legend {
 	box-sizing: border-box;
 	padding: 0;
 }
-input{width:100%;}
+input[type="text"],input[type="tel"],input[type="password"]{width:100%;}

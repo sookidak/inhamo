@@ -125,4 +125,3 @@ Array.prototype.slice.call(document.querySelectorAll('.accordion')).forEach(func
 
 });
 
-consloe.log('22');
