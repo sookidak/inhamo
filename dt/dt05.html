@@ -1,0 +1,144 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">가정의학과</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 타이틀 다음에 오는 주요영역 -->
+	<section class="topsub-wrap">
+		<div class="dt-view-wrap">
+			<div class="dt-view-photo">
+				<img src="../img/doctor_photo.png" alt="최성혜 의사 사진" />
+			</div>
+			<div  class="dt-view-info">
+				<p class="dt-view-text">가정의학과</p>
+				<p class="dt-view-name">최성혜</p>
+			</div>
+			<div class="dt-view-btn">
+				<button type="button" class="btn btn-l color01">진료예약</button>
+			</div>
+			<div class="dt-view-zzim">
+				<div class="check-heart">
+					<input type="checkbox" id="check-heart" aria-checked=”false” >
+					<label for="check-heart"><span class="offscreen">의료진 찜하기</span></label>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //타이틀 다음에 오는 주요영역 -->
+	<!-- tab -->
+	<div class="tab-wrap">
+		<div role="tablist" class="tablist-type1">
+			<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+			<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">주요프로필</a>
+		</div>
+	</div>
+	<!-- //tab -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<div class="title-type2">진료일정
+				<span class="section-right">
+					<span class="item">
+						<span class="badge-one"></span>
+						진료과
+					</span>
+					<span class="item">
+						<span class="star-wrap">
+							<span class="badge-star"></span>
+						</span>
+						센터
+					</span>
+				</span>
+			</div>
+			<div class="cont">
+				<div class="table-wrap">
+					<table>
+						<caption>주간 진료일정 테이블</caption>
+						<colgroup>
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+							<col style="width:calc(100% / 7)">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">월</th>
+								<th scope="col">화</th>
+								<th scope="col">수</th>
+								<th scope="col">목</th>
+								<th scope="col">금</th>
+								<th scope="col">토</th>
+							</tr> 
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">오전</th>
+								<td>
+									<span class="star-wrap">
+										<span class="badge-star"><span class="offscreen">진료함</span></span>
+									</span>
+								</td>
+								<td><span class="badge-one"></span></td>
+								<td><span class="star-wrap">
+									<span class="badge-star"></span>
+								</span></td>
+								<td><span class="star-wrap">
+									<span class="badge-star"></span>
+								</span></td>
+								<td><span class="star-wrap">
+									<span class="badge-star"></span>
+								</span></td>
+								<td><span class="star-wrap">
+									<span class="badge-star"></span>
+								</span></td>
+							</tr>
+							<tr>
+								<th scope="row">오후</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>	
+					</table>
+				</div>
+			</div>
+			<div class="title-type2">전문분야</div>
+			<div class="cont">
+				두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 
+				상심실성 빈맥, 심실빈맥, 방실전도장애, 동기능부전증 협심증
+			</div>
+			<div class="title-type2">비고사항</div>
+			<div class="cont">
+				비만센터(목요일 10시부터) 진료합니다.<br>
+				오후에는 가정의학과 진료를 담당하고 있습니다.
+			</div>
+			<div class="title-type2">담당부서</div>
+			<div class="cont">
+				<ul class="list-type1">
+					<li><a href="#link" class="active-type1">가정의학과</a></li>
+					<li><a href="#link" class="active-type1">비만센터</a></li>
+					<li><a href="#link" class="active-type1">가족 건강 및 금연 클리닉</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- //내용 전체 -->
+	
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')

@@ -45,53 +45,7 @@
 		 url('../fonts/NotoSans-Bold.woff2') format('woff2'),
 		 url('../fonts/NotoSans-Bold.woff') format('woff');
 }
-/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
-@font-face {
-	font-family: 'NotoKrL';
-	font-style: normal;
-	font-weight: 300;
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Light.eot');
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Light.woff2') format('woff2'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Light.woff') format('woff');
-}
-@font-face {
-	font-family: 'NotoKrDL';
-	font-style: normal;
-	font-weight: 100;
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-DemiLight.eot');
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-DemiLight.woff2') format('woff2'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-DemiLight.woff') format('woff');
-}
-@font-face {
-	font-family: 'NotoKrR';
-	font-style: normal;
-	font-weight: 400;
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Regular.eot');
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Regular.woff2') format('woff2'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Regular.woff') format('woff');
-}
-@font-face {
-	font-family: 'NotoKrM';
-	font-style: normal;
-	font-weight: 500;
-	src: url('../font/notokr/NotoSans-Medium.eot');
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Medium.woff2') format('woff2'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Medium.woff') format('woff');
-}
-@font-face {
-	font-family: 'NotoKrB';
-	font-style: normal;
-	font-weight: 700;
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Bold.eot');
-	src: url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Bold.woff2') format('woff2'),
-		 url('//fonts.gstatic.com/ea/notosanskr/v2/NotoSans-Bold.woff') format('woff');
-} */
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
 	display:block;
@@ -156,7 +110,7 @@ input, select {
 	vertical-align:middle;
 	font-size:initial;
 	-webkit-appearance: none;
-   -webkit-border-radius: 0;
+	-webkit-border-radius: 0;
 }
 em{font-style:normal}
 sub,sup{
@@ -203,5 +157,8 @@ legend {
 [type="radio"] {
 	box-sizing: border-box;
 	padding: 0;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border:none;
 }
 input[type="text"],input[type="tel"],input[type="password"]{width:100%;}
