@@ -1,0 +1,57 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">진료예약</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<!-- stepview wrap -->
+			<div  class="stepview-wrap">
+				<div class="step">
+					<ul>
+						<!-- 활성화는 active 클래스 추가, 단계 거친후에는 complete 클래수 추가 -->
+						<li class="active"><span class="step-one">1</span></li>
+						<li><span class="step-one">2</span></li>
+						<li><span class="step-one">3</span></li>
+						<li><span class="step-one">4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //stepview wrap -->
+			<div class="title-type2">
+				진료과 선택
+				<span class="section-right">
+					<span class="item">
+						<button type="button" class="btn-notice"><span class="icon icon-i"></span>유의사항</button>
+					</span>
+				</span>
+			</div>
+			<div class="cont">
+				<!-- 진료과 리스트 -->
+				<ul class="selec-part">
+					<li><button type="button" class="btn-part">가정의학과</button></li>
+				</ul>
+				<!-- //진료과 리스트 -->
+			</div>
+		</div>
+		<!-- //cont-wrap -->
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">다음단계로</button>
+		<button type="button" class="btn color03">예약취소</button>	
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')

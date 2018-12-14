@@ -92,7 +92,8 @@
 /* 공통 클래스 */
 .section-right{position:absolute;right:0;top:0;font-size:13px;color:#333;vertical-align: middle}
 .section-right .item{vertical-align:bottom}
-
+.section-right .btn-notice{height:20.5px;line-height:20.5px;vertical-align: middle;font-size:15px;color:#333;font-family:'NotoKrM';}
+.section-right .btn-notice .icon{vertical-align: top;margin-right: 5px;letter-spacing:-0.06em;}
 /* components */
 ::-webkit-input-placeholder { /* Edge */color:#777;}
 :-ms-input-placeholder { /* Internet Explorer 10-11 */color:#777;}
@@ -170,10 +171,10 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .checkbox{position:relative;display:inline-block;vertical-align:middle;margin-right:10px;}
 .checkbox input[type=checkbox]{position:absolute;left:0;top:0;}
 .checkbox label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
-.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') 0px 0px;cursor:pointer;z-index:10;background-size:240px 240px}
-.checkbox input[type=checkbox]:checked +label:before{background-position:0px -40px;}
+.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') 0px 0px;cursor:pointer;z-index:10;background-size:240px 240px;}
+.checkbox input[type=checkbox]:checked +label:before{background-position:0px -40px;background-color:#199da3;border-radius:50% 50%;}
 .checkbox input[type=checkbox]:disabled +label:before{background-position:0px -80px;}
-.checkbox input[type=checkbox]:disabled:checked +label:before{background-position:0px -120px;}
+.checkbox input[type=checkbox]:disabled:checked +label:before{background-position:0px -120px;background-color:transparent;}
 
 /* checkbox-type2 */
 .checkbox-type2{position:relative;display:inline-block;vertical-align:middle;margin-right:10px;}
@@ -362,6 +363,7 @@ table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;
 .table-wrap td{background:#fff;color:#777;padding:11px 15px;}
 .table-wrap tr th:first-child,.table-wrap tr td:first-child{border-left:none}
 .table-wrap tr th:last-child,.table-wrap tr td:last-child{border-right:none}
+.table-wrap tbody th{width:26%;}
 
 .table-wrap.type2 th{padding:15px 15px;background:#fff;border-right:0;font-size:15px;text-align:left;vertical-align: top}
 .table-wrap.type2 tbody th{padding:15px 0px 15px 15px;vertical-align: middle;width:26%;}
@@ -515,6 +517,13 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 .input-address ul li{margin-bottom:5px;}
 .input-address ul li:last-child{margin-bottom:0;}
 
+/* input 인증폼 */
+.input-certi:after,.input-certi li:after{content:'';display:block;clear:both;}
+.input-certi li{margin-bottom:5px;}
+.input-certi li:last-child{margin-bottom:0;}
+.input-certi input.certi-jumin{width:calc(50% - 7.5px);float:left;}
+.input-certi .certi-i{width:15px;display:inline-block;text-align:center;float:left;vertical-align: middle;line-height:40px;}
+
 /* 타이틀 + 토글 set */
 .input-answer:after{content:'';display:block;clear:both;}
 .input-answer .title-type3{float:left;}
@@ -587,7 +596,8 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 
 /* 의료진 */
 .dt-list-wrap{margin:25px 15px;}
-.dt-wrap{border:1px solid #ddd;}
+.cont .dt-list-wrap{margin:0;}
+.dt-wrap{border:1px solid #ddd;position:relative;}
 .dt-wrap .dt-img{width:100px;height:118px;}
 .dt-wrap .dt-img img{width:100%}
 .dt-wrap .dt-top{border-bottom:1px solid #ddd;padding-bottom:15px;margin:15px 15px 0 15px}
@@ -609,6 +619,13 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 .dt-bottom-right{float:right;width:39px;border-top:1px solid #ddd;}
 .dt-bottom-right .check-heart label{width:38px;height:38px;line-height:38px;}
 .dt-list-wrap .dt-wrap + .dt-wrap{margin-top:5px}
+.dt-wrap .dt-select{position:absolute;right:18px;top:18px;}
+.dt-wrap .dt-select .radio{margin-right:0;}
+.dt-wrap .dt-select .radio input[type=radio]+label{padding-left:0;}
+.dt-wrap .dt-select .radio input[type=radio]+label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') 0px 0px;cursor:pointer;z-index:10;background-size:240px 240px;border:none;}
+.dt-wrap .dt-select .radio input[type=radio]:checked +label:before{background-position:0px -40px;background-color:#0770bb;border:none;}
+.dt-wrap.active{border-color:#0770bb}
+
 
 
 /* 의료진상세 */
@@ -634,3 +651,19 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 .listbox-title:after{content:'';display:inline-block;width:15px;height:1px;position:absolute;left:0;bottom:0;background: #0770bb;}
 .listbox-cont{display:block;padding-top:10px;font-size:12px;color:#333;line-height:1.4;}
 .center-list-wrap .listbox + .listbox{margin-top:5px;}
+
+/* 진료예약 */
+.selec-part li{margin-bottom:5px;}
+.btn-part{position:relative;width:100%;border:1px solid #ddd;height:50px;display:block;font-size:15px;color:#333;text-align:left;padding-left:15px;}
+.btn-part:after{content:'';display:inline-block;position:absolute;right:18px;
+
+	width:8px; 
+	height:15px;
+	border: solid #ddd;
+	border-width: 0 0.1em 0.1em 0; 
+	margin-top: -0.1em;
+	-webkit-transform: skewx(10deg) rotate(45deg); 
+	-moz-transform: skewx(10deg) rotate(45deg);
+	-o-transform: skewx(10deg) rotate(45deg);
+	transform:  skewx(10deg)rotate(45deg);
+  }

@@ -1,0 +1,132 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">진료예약</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<!-- stepview wrap -->
+			<div  class="stepview-wrap">
+				<div class="step">
+					<ul>
+						<!-- 활성화는 active 클래스 추가, 단계 거친후에는 complete 클래수 추가 -->
+						<li class="complete"><span class="step-one">1</span></li>
+						<li class="active"><span class="step-one">2</span></li>
+						<li><span class="step-one">3</span></li>
+						<li><span class="step-one">4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //stepview wrap -->
+			<div class="title-type2">
+				의료진 선택
+				<span class="section-right">
+					<span class="item">
+						<button type="button" class="btn-notice"><span class="icon icon-i"></span>유의사항</button>
+					</span>
+				</span>
+			</div>
+			<!-- 진료과 리스트 -->
+			<div class="cont">
+				<!-- 의료진목록 -->
+				<div class="dt-list-wrap">
+					<!-- 의료진 -->
+					<!-- 의료진 선택시 dt-wrap 에 active 클래스 추가 -->
+					<div class="dt-wrap active">
+						<div class="dt-body">
+							<div class="dt-info-top">
+								<div class="dt-img">
+									<img src="../img/doctor_photo.jpg" alt="" />
+								</div>
+								<div class="dt-intro">
+									<div class="dt-name">김대혁</div>
+									<ul class="dt-list">
+										<li><em>오전</em>월,화,수,목,금</li>
+										<li><em>오후</em>수, 금</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dt-info-bottom">
+								<dl class="dl-type3">
+									<dt>전문분야</dt>
+									<dd>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 
+									상심실성 빈맥, 심실빈맥, 방실전도장애, 동기능부…</dd>
+									<dt>비고사항</dt>
+									<dd>
+										비만센터(목요일 10시부터) 진료합니다. 
+										오후에는 가정의학과 진료를 담당하고 있습니다.
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="dt-select">
+							<div class="radio">
+								<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+								<label for="radio-a2" ><span class="offscreen">김대혁 의료진 선택</span></label>
+							</div>
+						</div>
+					</div>
+					<!-- 의료진 -->
+					<!-- 의료진 -->
+					<div class="dt-wrap">
+						<div class="dt-body">
+							<div class="dt-info-top">
+								<div class="dt-img">
+									<img src="../img/img_noimg.jpg" alt="" />
+								</div>
+								<div class="dt-intro">
+									<div class="dt-name">김대혁</div>
+									<ul class="dt-list">
+										<li><em>오전</em>월,화,수,목,금</li>
+										<li><em>오후</em>수, 금</li>
+									</ul>
+								</div>
+							</div>
+							<div class="dt-info-bottom">
+								<dl class="dl-type3">
+									<dt>전문분야</dt>
+									<dd>두근거림, 실신, 호흡곤란, 흉통, 어지러움, 심방세동, 
+									상심실성 빈맥, 심실빈맥, 방실전도장애, 동기능부…</dd>
+									<dt>비고사항</dt>
+									<dd>
+										비만센터(목요일 10시부터) 진료합니다. 
+										오후에는 가정의학과 진료를 담당하고 있습니다.
+									</dd>
+								</dl>
+							</div>
+						</div>
+						<div class="dt-select">
+							<div class="radio">
+								<input type="radio" id="radio-a3" name="select1"  value="2" aria-checked=”true” >
+								<label for="radio-a3" ><span class="offscreen">김대혁 의료진 선택</span></label>
+							</div>
+						</div>
+					</div>
+					<!-- 의료진 -->
+				</div>
+				<!-- //의료진목록 -->
+			</div>
+			<!-- //진료과 리스트 -->
+			
+		</div>
+		<!-- //cont-wrap -->
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">다음단계로</button>
+		<button type="button" class="btn color03">예약취소</button>	
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')
