@@ -44,8 +44,10 @@
 .icon.icon-steth:before{width:27.5px;height:25px;background-position:-50px -100px;}
 .icon.icon-person:before{width:25px;height:28px;background-position:-50px -150px;}
 .icon.icon-cscenter:before{width:35px;height:31.5px;background-position:-50px -200px;}
-.icon.icon-i{position:relative;}
+.icon.icon-prev:before{width:9px;height:16.5px;background-position:-100px -100px;}
+.icon.icon-next:before{width:9px;height:16.5px;background-position:-100px -150px;}
 
+.icon.icon-i{position:relative;}
 .icon.icon-i:before{width:20.5px;height:20.5px;background-position:-100px 0}
 .icon.icon-do:before{background:url('../img/icon_do.png') left top no-repeat;width:114px;height:106px;background-size:114px 106px}
 .icon.icon-not:before{background:url('../img/icon_not.png') left top no-repeat;width:114px;height:106px;background-size:114px 106px}
@@ -54,7 +56,6 @@
 .icon.icon-phone:before{background:url('../img/icon_member.png') left top no-repeat;background-size:300px 200px;width:30px;height:46px;}
 .icon.icon-ipin{height:41px;width:42px;}
 .icon.icon-ipin:before{background:url('../img/icon_member.png') -50px top no-repeat;background-size:300px 200px;width:42px;height:41px;}
-
 .icon.icon-person-b:before{background:url('../img/icon_member.png') -150px top no-repeat;background-size:300px 200px;width:35px;height:40px;}
 .icon.icon-child:before{background:url('../img/icon_member.png') -200px top no-repeat;background-size:300px 200px;width:47.5px;height:39px;}
 .icon.icon-foreign:before{background:url('../img/icon_member.png') -250px top no-repeat;background-size:300px 200px;width:46px;height:39.5px;}
@@ -403,8 +404,11 @@ table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;
 /* layerpop */
 .layerpop-bg{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.5)}
 .layerpop{position:fixed;left:50%;top:50%;width:84%;background:#fff;height:auto;transform: translate(-50%,-50%)}
-.lp-contents-wrap{margin:15px;min-height:230px;}
+.lp-contents-wrap{margin:20px;min-height:230px;}
 .layerpop .btn-wrap .btn{padding:0 10px;}
+.lp-contents-wrap .lp-cont{margin-top:15px;}
+.lp-cont > .list-type-inner >li{font-size:14px;color:#333;margin-bottom:10px;}
+.lp-cont .list-type-inner .list-type2{margin-left:14px;margin-top:5px;}
 
 /* etcbox */
 .etcbox{background:#f3f3f3;padding:20px 14px 10px;}
@@ -655,15 +659,27 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 /* 진료예약 */
 .selec-part li{margin-bottom:5px;}
 .btn-part{position:relative;width:100%;border:1px solid #ddd;height:50px;display:block;font-size:15px;color:#333;text-align:left;padding-left:15px;}
-.btn-part:after{content:'';display:inline-block;position:absolute;right:18px;
+.btn-part:after{content:'';display:inline-block;position:absolute;right:14px;top:50%;width:14px;height:12px;background: url('../img/bg_checkbtn.png') left top no-repeat;background-size:50px 100px;transform: translateY(-50%)}
 
-	width:8px; 
-	height:15px;
-	border: solid #ddd;
-	border-width: 0 0.1em 0.1em 0; 
-	margin-top: -0.1em;
-	-webkit-transform: skewx(10deg) rotate(45deg); 
-	-moz-transform: skewx(10deg) rotate(45deg);
-	-o-transform: skewx(10deg) rotate(45deg);
-	transform:  skewx(10deg)rotate(45deg);
-  }
+.btn-part.active{border:#fff;color:#fff;background: #199da3; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+.btn-part.active:before{content:'';display:inline-block;position:absolute;right:10px;top:50%;width:25px;height:25px;background: #fff;border-radius:25px;transform: translateY(-50%)}
+.btn-part.active:after{background-position:0 -50px}
+
+/*  calendar  */
+.calendar-wrap{border-top:2px solid #bbb;}
+.calendar-body table{width:100%;}
+.calendar-body table >thead th,.calendar-body table >tbody td{text-align:center;}
+.calendar-body table >thead th{height:40px;font-size:15px;color:#777;font-family: 'NotoKrM';}
+.calendar-body table >tbody td{height:40px;}
+.calendar-body .calen-number{display:inline-block;width:30px;height:30px;line-height:28px;cursor:pointer;border-radius:30px;color:#000;font-size:14px;}
+.calendar-body table .calen-number.today{background:#eee;}
+.calendar-body table .calen-number.type1{border:1px solid #0770bb;color:#0770bb;}
+.calendar-body table .calen-number.type2{background:#0770bb;color:#fff;}
+.calendar-top{position:relative;text-align:center;padding-top:20px;padding-bottom:14px;}
+.calendar-top .calendar-date{display:inline-block;color:#000;font-size:16px;font-family: 'NotoKrM';}
+.calendar-date-prev{position:absolute;left:0;top:50%;margin-top:-8px;display:inline-block;width:30px;height:17px;text-align:left;}
+.calendar-date-next{position:absolute;right:0;top:50%;margin-top:-8px;display:inline-block;width:30px;height:17px;text-align:right;}
+.time-sel-wrap{margin-top:15px}

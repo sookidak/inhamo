@@ -1,0 +1,73 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">진료예약</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<!-- stepview wrap -->
+			<div  class="stepview-wrap">
+				<div class="step">
+					<ul>
+						<!-- 활성화는 active 클래스 추가, 단계 거친후에는 complete 클래스 추가 -->
+						<li class="complete"><span class="step-one">1</span></li>
+						<li class="complete"><span class="step-one">2</span></li>
+						<li class="complete"><span class="step-one">3</span></li>
+						<li class="active"><span class="step-one">4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //stepview wrap -->
+			<div class="title-type2">
+				예약정보
+				<span class="section-right">
+					<span class="item">
+						<button type="button" class="btn-notice"><span class="icon icon-i"></span>유의사항</button>
+					</span>
+				</span>
+			</div>
+			<div class="cont">
+				<div class="table-wrap">
+					<table>
+						<tr>
+							<th scope="row">환자명</th>
+							<td class="textL">송헌호</td>
+						</tr>
+						<tr>
+							<th scope="row">진료과</th>
+							<td class="textL">유방갑상선외과센터 (정신건강의학과)</td>
+						</tr>
+						<tr>
+							<th scope="row">의료진</th>
+							<td class="textL">배은기</td>
+						</tr>
+						<tr>
+							<th scope="row">예약일/시</th>
+							<td class="textL">2018.11.22(금) 09:45</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		<!-- //cont-wrap -->
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">예약완료</button>
+		<button type="button" class="btn color03">예약취소</button>	
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')

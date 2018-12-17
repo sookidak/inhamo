@@ -38,7 +38,15 @@
 			<div class="cont">
 				<!-- 진료과 리스트 -->
 				<ul class="selec-part">
-					<li><button type="button" class="btn-part">가정의학과</button></li>
+					<li>
+						<!-- btn 선택시 active 클래스 추가  -->
+						<button type="button" class="btn-part" aria-selected="false">가정의학과</button></li>
+					<li><button type="button" class="btn-part" aria-selected="false">감염내과</button></li>
+					<li><button type="button" class="btn-part " aria-selected="false">뇌신경센터 (신경과)</button></li>
+					<li><button type="button" class="btn-part active" aria-selected="true">뇌신경센터 (신경외과)</button></li>
+					<li><button type="button" class="btn-part " aria-selected="false">뇌혈관센터 (신경과)</button></li>
+					<li><button type="button" class="btn-part " aria-selected="false">뇌혈관센터 (신경외과)</button></li>
+					<li><button type="button" class="btn-part " aria-selected="false">당뇨내분비센터</button></li>
 				</ul>
 				<!-- //진료과 리스트 -->
 			</div>

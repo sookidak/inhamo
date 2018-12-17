@@ -1,0 +1,134 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">진료예약</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<!-- stepview wrap -->
+			<div  class="stepview-wrap">
+				<div class="step">
+					<ul>
+						<!-- 활성화는 active 클래스 추가, 단계 거친후에는 complete 클래스 추가 -->
+						<li class="complete"><span class="step-one">1</span></li>
+						<li class="complete"><span class="step-one">2</span></li>
+						<li class="active"><span class="step-one">3</span></li>
+						<li><span class="step-one">4</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //stepview wrap -->
+			<div class="title-type2">
+				예약일/시 선택
+				<span class="section-right">
+					<span class="item">
+						<button type="button" class="btn-notice"><span class="icon icon-i"></span>유의사항</button>
+					</span>
+				</span>
+			</div>
+			<div class="cont">
+				<!-- 캘린더 wrap -->
+				<div class="calendar-wrap">
+					<div class="calendar-top">
+						<button type="button" class="calendar-date-prev"><span class="icon icon-prev"><span class="offscreen">이전달로 넘기기</span></span></button>
+						<span class="calendar-date">2018년 11월</span>
+						<button type="button" class="calendar-date-next">
+							<span class="icon icon-next"><span class="offscreen">다음달로 넘기기</span></span>
+						</button>
+					</div>
+					<!--  캘린더 테이블 -->
+					<div class="calendar-body">
+						<table>
+							<caption>예약하기 달력</caption>
+							<thead>
+								<tr>
+									<th scope="col">월</th>
+									<th scope="col">화</th>
+									<th scope="col">수</th>
+									<th scope="col">목</th>
+									<th scope="col">금</th>
+									<th scope="col">토</th>
+									<th scope="col">일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><button type="button" class="calen-number">1</button></td>
+									<td><button type="button" class="calen-number">2</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" class="calen-number">3</button></td>
+									<td><button type="button" class="calen-number">4</button></td>
+									<td><button type="button" class="calen-number">5</button></td>
+									<td><button type="button" class="calen-number">6</button></td>
+									<td><button type="button" class="calen-number">7</button></td>
+									<td><button type="button" class="calen-number">8</button></td>
+									<td><button type="button" class="calen-number">9</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" class="calen-number">10</button></td>
+									<td><button type="button" class="calen-number">11</button></td>
+									<td><button type="button" class="calen-number">12</button></td>
+									<td><button type="button" class="calen-number">13</button></td>
+									<td><button type="button" class="calen-number">14</button></td>
+									<td><button type="button" class="calen-number">15</button></td>
+									<td><button type="button" class="calen-number">16</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" class="calen-number today">17</button></td>
+									<td><button type="button" class="calen-number">18</button></td>
+									<td><button type="button" class="calen-number type1">19</button></td>
+									<td><button type="button" class="calen-number">20</button></td>
+									<td><button type="button" class="calen-number">21</button></td>
+									<td><button type="button" class="calen-number type1">22</button></td>
+									<td><button type="button" class="calen-numbertype2">23</button></td>
+								</tr>
+								<tr>
+									<td><button type="button" class="calen-number">24</button></td>
+									<td><button type="button" class="calen-number">25</button></td>
+									<td><button type="button" class="calen-number type2">26</button></td>
+									<td><button type="button" class="calen-number">27</button></td>
+									<td><button type="button" class="calen-number">28</button></td>
+									<td><button type="button" class="calen-number type2">29</button></td>
+									<td><button type="button" class="calen-number">30</button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!--  //캘린더 테이블 -->
+				</div>
+				<!-- //캘린더 wrap -->
+				<div class="time-sel-wrap">
+					<label for="sel-time" class="offscreen">시간대 선택하기</label>
+					<select name="" id="sel-time">
+						<option value=""> 09:45</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- //cont-wrap -->
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">다음단계로</button>
+		<button type="button" class="btn color03">예약취소</button>	
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')
