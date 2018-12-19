@@ -22,26 +22,51 @@
 		</div>
 	</div>
 	<!-- //빠른 예약 -->
-	<!-- mian-box -->
 	<div class="main-box-wrap">
+		<!-- mian-box -->
 		<div class="main-box">
 			<div class="main-box-text">
 				인하대병원은 보다 전문적이고 특성화된<br>
-				<em class="color-style5">의료서비스</em>를 제공합니다.
+				<em>의료서비스</em>를 제공합니다.
 			</div>
-			ㄴㅎㄹㄴㅇㄹㅎ
+			<!-- tab-type1 -->
+			<div class="tab-wrap">
+				<div role="tablist" class="tablist-type1">
+					<a id="info-anchor" href="#search1" class="active" role="tab" aria-selected="true">진료과 검색</a>
+					<a id="doctors-anchor" href="#search2" role="tab" aria-selected="false">의료진 검색</a>
+				</div>
+				<div id="search1" role="tabpanel" aria-labelledby="info-anchor">
+					<div class="search-box-wrap">
+						<div class="search-box">
+							<label><input type="text" class="input-search" id="" placeholder="진료과명 또는 질화명 검색"></label>
+							<button type="button" class="btn-search"><span class="offscreen">검색시작 버튼</span></button>
+						</div>
+					</div>
+				</div>
+				<div id="search2" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+					<div class="search-box-wrap">
+						<div class="search-box">
+							<label><input type="text" class="input-search" id="" placeholder="의료진명 또는 질환명 검색"></label>
+							<button type="button" class="btn-search"><span class="offscreen">검색시작 버튼</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //tab-type1 -->
 		</div>
+		<!-- //mian-box -->
 	</div>
-	<!-- //mian-box -->
 	<div class="main-bg-type2">
 		<!-- mian-box -->
 		<div class="main-box-wrap">
 			<div class="main-box">
 				<div class="main-box-text">
-					<em class="color-style5">인하대병원 APP</em><br>
-					보다 다양한 인하대병원 서비스를 만나보세요.
+					<em>인하대병원 APP</em><br>보다 다양한 인하대병원 서비스를 만나보세요.
 				</div>
-				ㄴㅎㄹㄴㅇㄹㅎ
+				<div class="app-link-wrap">
+					<a href="#link"><span class="icon-ios"></span>iOS</a>
+					<a href="#link"><span class="icon-android"></span>ANDROID</a>
+				</div>
 			</div>
 		</div>
 		<!-- //mian-box -->
@@ -49,14 +74,81 @@
 		<div class="main-box-wrap">
 			<div class="main-box">
 				<div class="main-box-text">
-					<em class="color-style5">나의차트</em>를 통해 예약현황, 진료내역 등의<br>진료와 관련된 정보를 확인해보세요		
+					<em>나의차트</em>를 통해 예약현황, 진료내역 등의<br>진료와 관련된 정보를 확인해보세요
 				</div>
-				ㄴㅎㄹㄴㅇㄹㅎ
+				<div class="main-link-wrap">
+					<ul>
+						<li><a href="#link" class="mlink01">진료예약 확인</a></li>
+						<li><a href="#link" class="mlink02">검사결과 확인</a></li>
+						<li><a href="#link" class="mlink03">관심정보</a></li>
+						<li><a href="#link" class="mlink04">소통센터</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!-- //mian-box -->
 	</div>
 	
+	<div class="main-box-wrap no-pd">
+		<!-- tab-type1 -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type1">
+				<a id="info-anchor" href="#recent1" class="active" role="tab" aria-selected="true">건강</a>
+				<a id="doctors-anchor" href="#recent2" role="tab" aria-selected="false">영양</a>
+				<a id="doctors-anchor" href="#recent3" role="tab" aria-selected="false">약품</a>
+				<a id="doctors-anchor" href="#recent4" role="tab" aria-selected="false">상담</a>
+			</div>
+			<div id="recent1" role="tabpanel" aria-labelledby="info-anchor" class="slider-wrap">
+				<!-- 메인 슬라이더 -->
+				<div class="main-slider">
+					<div class="slider-item">
+						<div class="main-box">
+							<div class="main-recent-img">
+								<img src="../img/img_recent.jpg" alt="" >
+							</div>
+							<div class="main-slider-title"><a href="">가정의학과</a></div>
+							<div class="main-slider-text">가을에 더 무서운 일본뇌염, 성인도 방심금물!</div>
+						</div>
+					</div>
+					<div class="slider-item">
+						<div class="main-box">
+							<div class="main-recent-img">
+								<img src="../img/img_recent.jpg" alt="" >
+							</div>
+							<div class="main-slider-title"><a href="">가정의학과</a></div>
+							<div class="main-slider-text">가을에 더 무서운 일본뇌염, 성인도 방심금물!</div>
+						</div>
+					</div>
+				</div>
+				<!-- //메인 슬라이더 -->
+			</div>
+			<div id="recent2" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+				
+			</div>
+		</div>
+		<!-- //tab-type1 -->
+		
+	</div>
+	<div class="main-box-wrap">
+		<!-- mian-box -->
+		<div class="main-box">
+			<div class="main-box-text">
+				인하대병원으로 <em>오시는길</em>
+			</div>
+			<div class="main-map-wrap">
+				<div class="main-map">
+					<img src="../img/img_mainmap.png" alt="" />
+				</div>
+				<div class="main-map-text">인천광역시 중구 인항로 27 (신흥동 3가 7-206) 인하대병원</div>
+			</div>
+			<div class="btn-wrap">
+				<button type="button" class="btn color02">주소복사</button>
+				<button type="button" class="btn color01">층별안내</button>
+			</div>
+			
+		</div>
+		<!-- //mian-box -->
+	</div>
 </section>
 <!-- //main-container -->
 @@include('../inc/footer.html')
