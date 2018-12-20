@@ -6,15 +6,17 @@
 		
 		let $aside = $(this);
 		let $openBtn = $('.js-menu-open');
-		let asideW = $(window).width();
+		let asideW = $(window).outerWidth();
 
+		$aside.hide().css('width',asideW);
 		return this.each(function() {
-			$aside.hide().css('width',asideW);
 			
 			$openBtn.click(function(){
 				if($aside.is(':hidden')){
-					$aside.stop().show().animate({'right': '0'});
-					$('body').css('overflow','hidden');
+					$aside.stop().show().animate({'right': '0'},function(){
+						$('body').css('overflow','hidden');	
+					});
+					
 				}else{
 					$aside.stop().animate({'right': '100%'}).hide('100');
 					$('body').css('overflow','auto');

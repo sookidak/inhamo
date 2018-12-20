@@ -1,5 +1,35 @@
 <!-- footer -->
-
+<div class="bottom-quickmenu">
+	<button type="button" class="btn-quickmenu"><span class="offscreen">빠른 메뉴 열기</span></button>
+</div>
+<div class="quickmenu-list-wrap">
+	<div class="bottom-quickmenu">
+		<button type="button" class="btn-quickmenu close"><span class="offscreen">빠른 메뉴 열기</span></button>
+	</div>
+	<ul class="quickmenu-list">
+		<li>
+			<button type="button" class="btn-quickmenu2 reserve"><span class="icon"></span><span class="quickmenu-text">진료예약</span></button>
+		</li>
+		<li>
+			<button type="button" class="btn-quickmenu2 lookup"><span class="icon"></span><span class="quickmenu-text">예약조회</span></button>
+		</li>
+		<li>
+			<button type="button" class="btn-quickmenu2 depart"><span class="icon"></span><span class="quickmenu-text">진료과</span></button>
+		</li>
+		<li>
+			<button type="button" class="btn-quickmenu2 doctor"><span class="icon"></span><span class="quickmenu-text">의료진</span></button>
+		</li>
+		<li>
+			<button type="button" class="btn-quickmenu2 customer"><span class="icon"></span><span class="quickmenu-text">고객센터</span></button>
+		</li>
+	</ul>
+</div>
+<div class="bottom-quick-tel">
+	<button type="button" onclick="document.location.href='tel:0328902114'"><span class="offscreen">인하대병원 대표전화 전화걸기</span></button>
+</div>
+<div class="bottom-quick-map">
+	<button type="button"><span class="offscreen">인하대병원 오시는길 바로가기</span></button>
+</div>
 <!-- footer -->
 <script src="../js/accordion.js"></script>
 <script src="../js/jquery-3.1.1.min.js"></script>
@@ -8,15 +38,25 @@
 
 <script>
 $(document).ready(function(){
+	
 	$('.js-aside').showLeft();
 	$('.js-nav').showLnb();
 	$('.main-slider').bxSlider({
-		useCSS:true,
-		stopAutoOnClick: true,
+		auto:true,
 		pager: true,
-		infiniteLoop:true,
-		slideMargin:'15px'
+		stopAutoOnClick:false,
+		autoControls:true,
+		useCSS:true,
+		infiniteLoop:false,
+		slideMargin:'15px',
+		controls:false,
+		autoControlsCombine:true,
+		oneToOneTouch:true,
+		touchEnabled:true
 	});
+	$(window).resize(function(){
+		$('.js-aside').showLeft();	
+	})
 })
 </script>
 </body>
