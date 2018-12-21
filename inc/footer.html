@@ -1,10 +1,10 @@
 <!-- footer -->
 <div class="bottom-quickmenu">
-	<button type="button" class="btn-quickmenu"><span class="offscreen">빠른 메뉴 열기</span></button>
+	<button type="button" class="btn-quickmenu js-quickbtn"><span class="offscreen">빠른 메뉴 열기</span></button>
 </div>
-<div class="quickmenu-list-wrap">
+<div class="quickmenu-list-wrap js-quickwrap">
 	<div class="bottom-quickmenu">
-		<button type="button" class="btn-quickmenu close"><span class="offscreen">빠른 메뉴 열기</span></button>
+		<button type="button" class="btn-quickmenu close js-quickclose"><span class="offscreen">빠른 메뉴 닫기</span></button>
 	</div>
 	<ul class="quickmenu-list">
 		<li>
@@ -30,7 +30,11 @@
 <div class="bottom-quick-map">
 	<button type="button"><span class="offscreen">인하대병원 오시는길 바로가기</span></button>
 </div>
+<div class="bottom-quick-up js-scrolltop">
+	<button type="button"><span class="offscreen">페이지 상단으로 올리기</span></button>
+</div>
 <!-- footer -->
+
 <script src="../js/accordion.js"></script>
 <script src="../js/jquery-3.1.1.min.js"></script>
 <script src="../js/jquery.bxslider.min.js"></script>
@@ -38,8 +42,6 @@
 
 <script>
 $(document).ready(function(){
-	
-	$('.js-aside').showLeft();
 	$('.js-nav').showLnb();
 	$('.main-slider').bxSlider({
 		auto:true,
@@ -54,10 +56,8 @@ $(document).ready(function(){
 		oneToOneTouch:true,
 		touchEnabled:true
 	});
-	$(window).resize(function(){
-		$('.js-aside').showLeft();	
-	})
 })
 </script>
+
 </body>
 </html>

@@ -7,6 +7,8 @@
 .skip a{position: absolute;top: -100px;left: -999px;display:block;height:50px;padding:0 20px;line-height:50px;font-size:16px;text-align:center;background: #31313b;color: white;}
 .skip a:focus{top:0;left:0;}
 
+.scrollOff{position:fixed;overflow:hidden;height:100%;}
+
 /* 기본 CSS */
 .textR{text-align:right !important;}
 .textC{text-align:center !important;}
@@ -231,7 +233,7 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .logo a{display:block;}
 .logo a img{width:100%;}
 
-.header{background:#0770bb;height:60px;position:relative;}
+.header{background:#0770bb;height:60px;position:fixed;left:0;top:0;right:0;z-index:30;}
 .header:after{content:'';display:block;clear:both;}
 .header .logo{position:absolute;left:15px;top:13px;}
 .header-right{text-align:right;float:right;margin-right:10px;margin-top:15px;}
@@ -239,6 +241,8 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .header-btns button[type=button]:before{content:'';display:inline-block;background:url('../img/icon_header.png') no-repeat;background-size:150px 150px}
 .header-btns button[type=button].btn-menu:before{width:20px;height:16px;background-position:0 0;}
 .header-btns button[type=button].btn-login:before{width:18px;height:19px;background-position:0 -50px;}
+
+.container{margin-top:60px;position: relative;}
 
 /* 타이틀영역 */
 .pagetitle-wrap:after{content:'';display:block;clear:both;}
@@ -727,8 +731,8 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .lnb-2depth >li:last-child{border-bottom:none;}
 .lnb-2depth>li>a{position:relative;color:#333;font-size:15px;padding-left:45px;height:45px;line-height:45px;display:block;}
 .lnb-2depth >li>a:before{content:'';display:inline-block;position:absolute;left:32.5px;top:21px;width:3px;height:3px;background: #aaa;}
-.lnb-2depth>li>a:after{content:'';position:absolute;right:15px;top:50%;display:inline-block;width:13.5px;height:7.5px;background:url('../img/icon_lnb.png') -100px -100px no-repeat;transform: translateY(-50%);background-size:150px 300px;}
-.lnb-2depth>li.active>a:after{background-position:-100px -150px}
+.lnb-2depth>li>a.has-sub:after{content:'';position:absolute;right:15px;top:50%;display:inline-block;width:13.5px;height:7.5px;background:url('../img/icon_lnb.png') -100px -150px no-repeat;transform: translateY(-50%);background-size:150px 300px;}
+.lnb-2depth>li.active>a.has-sub:after{background-position:-100px -100px}
 
 .lnb-3depth{border-top:1px solid #eee;display:none;}
 .lnb-3depth >li{border-bottom:1px solid #eee;display:block;background: #f8f8f8;}
@@ -757,8 +761,7 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .btn.btn-pc{height:30px;line-height:30px;color:#fff;font-size:12px;font-family: 'NotoKrM';width:auto;padding:0 25px;}
 
 /* main */
-.main-container{position:relative;}
-.main-container:before{content:'';position:absolute;left:0;top:0;right:0;display:block;height:1px;background:rgba(255,255,255,0.5);width:100%;z-index:1;}
+.container.main:before{content:'';position:absolute;left:0;top:0;right:0;display:block;height:1px;background:rgba(255,255,255,0.5);width:100%;z-index:1;}
 .main-cont-bg{position:absolute;left:0;top:0;right:0;height:255px;
 background: #0770bb; /* Old browsers */
 background: -moz-linear-gradient(top, #0770bb 0%, #199da3 100%); /* FF3.6-15 */
@@ -837,13 +840,13 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 .nodata:before{content:'';display:inline-block;width:95px;height:95px;background: url('../img/icon_nodata.png') left top no-repeat;background-size:95px 95px;margin-bottom:20px;}
 
 /* 하단 메뉴 */
-.bottom-quickmenu{position:fixed;left:15px;bottom:25px;}
+.bottom-quickmenu{position:fixed;left:15px;bottom:25px;z-index:10;}
 .btn-quickmenu{display:inline-block;width:50px;height:50px;background:#fff;box-shadow: 1px 3px 5px #c1c1c1;border-radius:50px;}
 .btn-quickmenu:before{content:'';display:inline-block;width:27.5px;height:27.5px;background:url('../img/icon_common.png') 0 -150px no-repeat;background-size:300px 300px;}
 .btn-quickmenu.close{background:#199da3;box-shadow: 1px 3px 5px #000;}
 .btn-quickmenu.close:before{content:'';display:inline-block;width:20.5px;height:20.5px;background:url('../img/icon_common.png') 0 -200px no-repeat;background-size:300px 300px;}
 
-.quickmenu-list-wrap{position:fixed;left:0;top:0;bottom:0;right:0;background:rgba(0,0,0,0.8);display:none;}
+.quickmenu-list-wrap{position:fixed;left:0;top:0;bottom:0;right:0;background:rgba(0,0,0,0.8);z-index:110;display:none;}
 .quickmenu-list{position:absolute;left:15px;bottom:85px;}
 .quickmenu-list li{margin-top:10px;}
 .btn-quickmenu2{display:inline-block;vertical-align: middle;line-height:50px;text-align:center;}
@@ -855,13 +858,16 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 .btn-quickmenu2.lookup .icon:before{content:'';display:inline-block;background-position:-50px -50px;width:23.5px;height:30px;vertical-align: middle}
 .btn-quickmenu2.reserve .icon:before{content:'';display:inline-block;background-position:-50px 0px;width:24.5px;height:25.5px;vertical-align: middle}
 
-.bottom-quick-tel{position:fixed;right:74px;bottom:25px;}
+.bottom-quick-tel{position:fixed;right:74px;bottom:25px;z-index:10;}
 .bottom-quick-tel button{display:inline-block;width:50px;height:50px;background:#199da3;box-shadow: 1px 3px 5px #c1c1c1;border-radius:50px;}
 .bottom-quick-tel button:before{content:'';display:inline-block;width:24.5px;height:24.5px;background:url('../img/icon_common.png') 0 -50px no-repeat;background-size:300px 300px;}
-.bottom-quick-map{position:fixed;right:15px;bottom:25px;}
+.bottom-quick-map{position:fixed;right:15px;bottom:25px;z-index:10;}
 .bottom-quick-map button{display:inline-block;width:50px;height:50px;background:#199da3;box-shadow: 1px 3px 5px #c1c1c1;border-radius:50px;}
 .bottom-quick-map button:before{content:'';display:inline-block;width:18px;height:25.5px;background:url('../img/icon_common.png') 0 -100px no-repeat;background-size:300px 300px;}
 
+.bottom-quick-up{position:fixed;right:15px;bottom:84px;display:none;z-index:10;}
+.bottom-quick-up button{display:inline-block;width:50px;height:50px;background:#fff;box-shadow: 1px 3px 5px #c1c1c1;border-radius:50px;}
+.bottom-quick-up button:before{content:'';display:inline-block;width:23px;height:24.5px;background:url('../img/icon_common.png') 0 0px no-repeat;background-size:300px 300px;}
 
 
 

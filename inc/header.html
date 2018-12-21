@@ -37,16 +37,16 @@
 	<!-- //로그인 일때 -->
 	<!-- lnb -->
 	<div class="lnb">
-		<nav class="nav-wrap">
+		<nav class="nav-wrap" id="nav">
 			<ul class="nav js-nav">
 				<!-- lnb  메뉴 열릴때 active 클래스 추가 -->
 				<li>
 					<button type="button" class="btn-lnb rv" data-href="#gnbmenu1" aria-menu-index="1" aria-expanded="false">진료예약</button>
 					<div id="gnbmenu1" aria-hidden="false">
 						<ul class="lnb-2depth">
-							<li><a href="link">회원예약</a></li>
-							<li><a href="link">비회원예약</a></li>
-							<li><a href="link">비회원예약조회</a></li>
+							<li><a href="#link">회원예약</a></li>
+							<li><a href="#link">비회원예약</a></li>
+							<li><a href="#link">비회원예약조회</a></li>
 						</ul>
 					</div>
 				</li>
@@ -54,8 +54,8 @@
 					<button type="button" class="btn-lnb dt"  data-href="#gnbmenu2" aria-menu-index="2" aria-expanded="false">진료과/의료진</button>
 					<div id="gnbmenu2" aria-hidden="false">
 						<ul class="lnb-2depth">
-							<li><a href="link">진료과 및 의료진</a></li>
-							<li><a href="link">전문센터</a></li>
+							<li><a href="#link">진료과 및 의료진</a></li>
+							<li><a href="#link">전문센터</a></li>
 						</ul>
 					</div>
 				</li>
@@ -65,21 +65,21 @@
 						<ul class="lnb-2depth">
 							<!-- 3depth 열려야 할때 active 클래스 추가 -->
 							<li>
-								<a href="link">진료예약안내</a>
+								<a href="#link" class="has-sub">진료예약안내</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">초진안내</a></li>
-									<li><a href="link">재진안내</a></li>
+									<li><a href="#link">초진안내</a></li>
+									<li><a href="#link">재진안내</a></li>
 								</ul>
 							</li>
-							<li><a href="link">외래진료안내</a>
+							<li><a href="#link" class="has-sub">외래진료안내</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">절차안내</a></li>
-									<li><a href="link">시간 및 접수안내</a></li>
-									<li><a href="link">순서도</a></li>
-									<li><a href="link">요양급여의뢰서</a></li>
+									<li><a href="#link">절차안내</a></li>
+									<li><a href="#link">시간 및 접수안내</a></li>
+									<li><a href="#link">순서도</a></li>
+									<li><a href="#link">요양급여의뢰서</a></li>
 								</ul>
 							</li>
-							<li><a href="link">입원진료안내</a></li>
+							<li><a href="#link">입원진료안내</a></li>
 						</ul>
 					</div>
 				</li>
@@ -87,12 +87,12 @@
 					<button type="button" class="btn-lnb gd"  data-href="#gnbmenu4" aria-menu-index="4" aria-expanded="false">이용안내</button>
 					<div id="gnbmenu4" aria-hidden="false">
 						<ul class="lnb-2depth">
-							<li><a href="link">찾아오시는 길</a></li>
-							<li><a href="link">층별안내</a></li>
-							<li><a href="link">병문안 안내</a></li>
-							<li><a href="link">주차장 이용안내</a></li>
-							<li><a href="link">전화번호 안내</a></li>
-							<li><a href="link">편의시설</a></li>
+							<li><a href="#link">찾아오시는 길</a></li>
+							<li><a href="#link">층별안내</a></li>
+							<li><a href="#link">병문안 안내</a></li>
+							<li><a href="#link">주차장 이용안내</a></li>
+							<li><a href="#link">전화번호 안내</a></li>
+							<li><a href="#link">편의시설</a></li>
 						</ul>
 					</div>
 				</li>
@@ -100,12 +100,12 @@
 					<button type="button" class="btn-lnb hi"  data-href="#gnbmenu5" aria-menu-index="5" aria-expanded="false">건강정보</button>
 					<div id="gnbmenu5" aria-hidden="false">
 						<ul class="lnb-2depth">
-							<li><a href="link">건강의학정보</a></li>
-							<li><a href="link">영양정보</a></li>
-							<li><a href="link">약품정보</a></li>
-							<li><a href="link">검사정보</a></li>
-							<li><a href="link">진료상담</a></li>
-							<li><a href="link">인하웹진</a></li>
+							<li><a href="#link">건강의학정보</a></li>
+							<li><a href="#link">영양정보</a></li>
+							<li><a href="#link">약품정보</a></li>
+							<li><a href="#link">검사정보</a></li>
+							<li><a href="#link">진료상담</a></li>
+							<li><a href="#link">인하웹진</a></li>
 						</ul>
 					</div>
 				</li>
@@ -113,33 +113,33 @@
 					<button type="button" class="btn-lnb my"  data-href="#gnbmenu6" aria-menu-index="6" aria-expanded="false">나의차트</button>
 					<div id="gnbmenu6" aria-hidden="false">
 						<ul class="lnb-2depth">
-							<li><a href="link">예약정보조회</a>
+							<li><a href="#link" class="has-sub">예약정보조회</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">진료예약정보</a></li>
-									<li><a href="link">검진예약정보</a></li>
+									<li><a href="#link">진료예약정보</a></li>
+									<li><a href="#link">검진예약정보</a></li>
 								</ul>
 							</li>
-							<li><a href="link">진료내역조회</a>
+							<li><a href="#link" class="has-sub">진료내역조회</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">진료내역</a></li>
-									<li><a href="link">검진내역</a></li>
+									<li><a href="#link">진료내역</a></li>
+									<li><a href="#link">검진내역</a></li>
 								</ul>
 							</li>
-							<li><a href="link">소통센터</a>
+							<li><a href="#link" class="has-sub">소통센터</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">진료상담</a></li>
-									<li><a href="link">진료상담(관리자용)</a></li>
-									<li><a href="link">고객의소리</a></li>
-									<li><a href="link">고객의소리(관리자용)</a></li>
+									<li><a href="#link">진료상담</a></li>
+									<li><a href="#link">진료상담(관리자용)</a></li>
+									<li><a href="#link">고객의소리</a></li>
+									<li><a href="#link">고객의소리(관리자용)</a></li>
 								</ul>
 							</li>
-							<li><a href="link">즐겨찾기</a>
+							<li><a href="#link" class="has-sub">즐겨찾기</a>
 								<ul class="lnb-3depth">
-									<li><a href="link">나의 의료진</a></li>
-									<li><a href="link">나의 건강정보</a></li>
+									<li><a href="#link">나의 의료진</a></li>
+									<li><a href="#link">나의 건강정보</a></li>
 								</ul>
 							</li>
-							<li><a href="link">정보수정</a></li>
+							<li><a href="#link">정보수정</a></li>
 						</ul>
 					</div>
 				</li>
