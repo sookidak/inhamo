@@ -242,7 +242,6 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .header-btns button[type=button].btn-menu:before{width:20px;height:16px;background-position:0 0;}
 .header-btns button[type=button].btn-login:before{width:18px;height:19px;background-position:0 -50px;}
 
-.container{margin-top:60px;position: relative;}
 
 /* 타이틀영역 */
 .pagetitle-wrap:after{content:'';display:block;clear:both;}
@@ -258,7 +257,9 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .topsub-wrap .sample{width:100%;}
 
 /* contents */
-.contents-wrap{border-top:1px solid #eee;}
+.header+.container{margin-top:60px;}
+.header+.container .contents-wrap{border-top:1px solid #eee;}
+
 .contents-wrap:after{content:'';display:block;clear:both;}
 .cont-wrap{margin:25px 15px;}
 .contents-wrap .title-type1{margin-bottom:14px;}
@@ -761,6 +762,7 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .btn.btn-pc{height:30px;line-height:30px;color:#fff;font-size:12px;font-family: 'NotoKrM';width:auto;padding:0 25px;}
 
 /* main */
+.container.main{position: relative;}
 .container.main:before{content:'';position:absolute;left:0;top:0;right:0;display:block;height:1px;background:rgba(255,255,255,0.5);width:100%;z-index:1;}
 .main-cont-bg{position:absolute;left:0;top:0;right:0;height:255px;
 background: #0770bb; /* Old browsers */

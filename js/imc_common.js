@@ -72,7 +72,7 @@
 		let $nav = $('.js-nav');
 		let $navlist = $nav.find('li');
 		let $menuFirst = $navlist.find('.btn-lnb');
-		let $menuSecond = $navlist.find('.lnb-2depth>li>a');
+		let $menuSecond = $navlist.find('.lnb-2depth>li>a.has-sub');
 
 		$menuFirst.click(function(){
 			var $selLi = $(this).parent('li');
