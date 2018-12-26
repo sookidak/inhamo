@@ -29,7 +29,7 @@
 .color-style6{color:#cd0e0e}
 
 /* hidding */
-.offscreen{position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;line-height: 0;white-space: normal;word-wrap: break-word;word-break: break-all;clip: rect(0,0,0,0);overflow:hidden;}
+.offscreen{position: absolute;width:0px;height:0px;margin: -1px;padding: 0;border: 0;line-height: 0;font-size:0;white-space: normal;word-wrap: break-word;word-break: break-all;clip: rect(0,0,0,0);overflow:hidden;}
 
 
 /* icon */
@@ -71,6 +71,8 @@
 .NotoKrM{font-family: 'NotoKrM';}
 .NotoKrB{font-family: 'NotoKrB';}
 
+/* 공통 필수별 */
+.icon-nc{color:#cd0e0e;font-size:14px;margin-left:3px;line-height:0;vertical-align: middle}
 
 /* 공통 */
 .title-type1{font-family:'NotoKrM';font-size:18px;color:#000;}
@@ -91,6 +93,7 @@
 .cont-wrap .cont + .title-type2{margin-top:25px}
 .cont-wrap .cont .list-type2{margin-top:6px;}
 .cont-wrap .cont + .cont{margin-top:20px;}
+.cont-wrap .cont > .text-small-type1{margin-top:6px;}
 
 /* 공통 클래스 */
 .section-right{position:absolute;right:0;top:0;font-size:13px;color:#333;vertical-align: middle}
@@ -124,6 +127,7 @@ background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%);
 background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
 .btn.btn-l{width:100%}
+.btn.btn-s{width:calc(100% / 3)}
 .btn.round{border-radius:10px 0 0 0}
 
 /* 버튼 wrap */
@@ -380,6 +384,8 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .table-wrap{position:relative;border-top:2px solid #bbb;table-layout:fixed;width:100%;}
 .table-wrap table{width:100%;line-height:1.2;}
 table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;padding:0;overflow:hidden;}
+.table-wrap table em{font-weight:bold;}
+.table-wrap table .radio{margin-bottom:5px;}
 .table-wrap thead th{border-bottom:1px solid #ddd;}
 .table-wrap th,.table-wrap td{font-size:13px;border-bottom:1px solid #eee;border-right:1px solid #eee;height:40px;text-align:center;line-height:1.3;}
 .table-wrap th{background:#f6f6f6;color:#000;font-family: 'NotoKrR';padding:11px 10px;}
@@ -534,10 +540,10 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 .input-set .btn{position:absolute;right:0;top:0;width:90px;padding:0px;letter-spacing: -0.05em;}
 
 /* input email */
-.input-email li{margin-bottom:5px;}
+.input-email li{margin-bottom:5px;font-size:0;}
 .input-email li:last-child{margin-bottom:0;}
 .input-email input{width:calc(50% - 10px);}
-.input-email .email-i{width:20px;display:inline-block;text-align:center;}
+.input-email .email-i{width:20px;display:inline-block;text-align:center;font-size:13px;}
 
 /* input address */
 .input-address ul li{margin-bottom:5px;}
@@ -622,6 +628,8 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 /* 의료진 */
 .dt-list-wrap{margin:25px 15px;}
 .cont .dt-list-wrap{margin:0;}
+.dt-list-wrap .dt-top + .dt-wrap{margin-top:16px;}
+.dt-top li{color:#333;font-size:14px;line-height:20px;}
 .dt-wrap{border:1px solid #ddd;position:relative;}
 .dt-wrap .dt-img{width:100px;height:118px;}
 .dt-wrap .dt-img img{width:100%}

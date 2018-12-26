@@ -1,0 +1,81 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">정보수정</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- tab -->
+	<div class="tab-wrap">
+		<div role="tablist" class="tablist-type1">
+			<a id="info-modi" href="#info-modi" role="tab" aria-selected="false">기본정보 수정</a>
+			<a id="ch-pw" href="#ch-pw" role="tab" aria-selected="false" >비밀번호 변경</a>
+			<a id="memout" href="#memout" role="tab" aria-selected="true" class="active">회원탈퇴</a>
+		</div>
+	</div>
+	<!-- //tab -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<div class="cont-wrap" id="memout">
+			
+			<div class="title-type2">탈퇴사유</div>
+			<!-- 필수정보 -->
+			<div class="cont">
+				<div class="inputform-wrap">
+					<form action="">
+						<ul>
+							<li>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a2" >아이디 변경을 위해서</label>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a2" >더 이상 이용하지 않거나, 이용하지 못하게 되어서</label>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a2" >필요하고 유용한 정보가 없어서</label>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a2" >개인정보 유출이 우려되어서</label>
+								</div>
+							</li>
+							<li>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a2" >기타 (간략한 사유를 적어주세요)</label>
+								</div>
+								<input type="text">
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<!-- //필수정보 -->
+		</div>
+		<!-- //cont-wrap -->
+		
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">탈퇴완료</button>
+		<button type="button" class="btn color03">탈퇴취소</button>
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')
