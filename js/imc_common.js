@@ -62,6 +62,26 @@
 	}
 	scrollTop();
 
+	// next-div open
+	function showhideBox(){
+		let $shBtn = $('.js-showhide-btn');
+		let $shBox = $('.js-showhide-box');
+		let activeClass = 'active';
+
+		$shBox.hide();
+
+		$shBtn.click(function() {
+			if($shBox.is(':hidden')){
+				$(this).addClass(activeClass);
+				$shBox.show();
+			}else{
+				$(this).removeClass(activeClass);
+				$shBox.hide();
+			}
+		});
+	}
+	showhideBox();
+
 
 	// lnb 메뉴
 	$.fn.showLnb = function(options){
