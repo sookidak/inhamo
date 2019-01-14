@@ -1,0 +1,161 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">검진내역</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<div class="title-type2">
+				기본정보
+			</div>
+			<div class="cont">
+				<div class="table-wrap">
+					<table>
+						<caption>기본정보 상세 테이블</caption>
+						<tr>
+							<th scope="row">검진일자</th>
+							<td class="textL">2018.11.12(금) 16:55</td>
+						</tr>
+						<tr>
+							<th scope="row">진료과</th>
+							<td class="textL">유방갑상선외과센터</td>
+						</tr>
+						<tr>
+							<th scope="row">검사유형</th>
+							<td class="textL">
+								단체검진Ⅰ
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">선택검사</th>
+							<td class="textL">생체나이측정검사(HP/0), 
+								액상포진검사(hp), 생체나이
+								측정검사(HP/0), 액상포진검사
+								(hp), 생체나이측정검사(HP/0), 
+								액상포진검사(hp), 생체나이
+								측정검사(HP/0), 액상포진검사(hp)
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="title-type2">
+				종합판정소견
+			</div>
+			<div class="cont">
+				<ul class="list-type1">
+					<li>아래 항목별로 조회하실 수 있으며, 소견사항은 참고로 하시고 정확한 결과는 판정의사와 직접 상담하시기 바랍니다.</li>
+					<li>종합결과 판정의 : <em>직업환경의학과 김철순</em></li>
+				</ul>
+				
+				<div class="select-wrap mart15">
+					<select name="" id="email-sel">
+						<option value="">검진유형 전체</option>
+					</select>
+				</div>
+				<!-- accordion wrap -->
+				<div class="accordion-wrap mart15">
+					<dl class="accordion" id="accordionGroup" role="presentation">
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="sect1" id="accordion1id" aria-disabled="true">
+								<span>Scaling</span>
+								<span class="accordion-icon"></span>
+							</button>
+						</dt>
+						<dd id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel">
+							<div class="accord-p">
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다.
+							</div>
+						</dd>
+						<!-- //accordion set -->
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id" ><span>(M) 보철치료</span>
+							<span class="accordion-icon"></span></button>
+						</dt>
+						<dd id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+							<div class="accord-p">
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다.
+							</div>
+						</dd>
+						<!-- //accordion set -->
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id" ><span>비만</span>
+							<span class="accordion-icon"></span></button>
+						</dt>
+						<dd id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
+							<div class="accord-p">
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다.
+							</div>
+						</dd>
+						<!-- //accordion set -->
+						<!-- accordion set -->
+						<dt role="heading">
+							<button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect4" id="accordion4id" ><span>TG : 200 ~ 500</span>
+							<span class="accordion-icon"></span></button>
+						</dt>
+						<dd id="sect4" role="region" aria-labelledby="accordion4id" class="accordion-panel" hidden="">
+							<div class="accord-p">
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 
+								상세 내용입니다. 상세 내용입니다. 상세 내용입니다. 상세 내용입니다.
+							</div>
+						</dd>
+						<!-- //accordion set -->
+					</dl>
+				</div>
+				<!-- //accordion wrap -->
+				<div class="table-wrap">
+					<table>
+						<caption>검진내역 결과 테이블</caption>
+						<thead>
+							<th scope="col" colspan="2">검사Set / 검사명</th>
+							<th scope="col">결과</th>
+							<th scope="col">정상범위</th>
+						</thead>
+						<tr>
+							<th scope="row" rowspan="3">신체계측</th>
+							<th scope="row">신장</th>
+							<td class="textR">181.4</td>
+							<td class="textR"></td>
+						</tr>
+						<tr>
+							<th scope="row">체중</th>
+							<td class="textR">72</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">혈중</th>
+							<td class="textR">135.7
+							</td>
+							<td>
+								90 ~ 119.9
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- //cont-wrap -->
+	</section>
+	<!-- //내용 전체 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')

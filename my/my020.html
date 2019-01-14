@@ -7,52 +7,119 @@
 		<div class="title-left-btn">
 			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
 		</div>
-		<h1 class="title-type1">정보수정</h1>
+		<h1 class="title-type1">고객의 소리</h1>
 	</section>
 	<!-- //타이틀영역 -->
-	<!-- tab -->
-	<div class="tab-wrap">
-		<div role="tablist" class="tablist-type1">
-			<a id="info-modi" href="#info-modi" role="tab" aria-selected="false">기본정보 수정</a>
-			<a id="ch-pw" href="#ch-pw" role="tab" aria-selected="true" class="active" >비밀번호 변경</a>
-			<a id="memout" href="#memout" role="tab" aria-selected="false">회원탈퇴</a>
-		</div>
-	</div>
-	<!-- //tab -->
 	<!-- 내용 전체 -->
 	<section class="contents-wrap">
-		<div class="cont-wrap" id="ch-pw">
-			
-			<div class="resetpw-wrap">
-				<form action="">
-					<ul class="inputform">
-						<li>
-							<label for="pw" class="offscreen">현재 비밀번호</label>
-							<input type="password" id="pw" placeholder="현재 비밀번호">
-						</li>
-						<li>
-							<label for="pw-new" class="offscreen">새 비밀번호</label>
-							<input type="password" id="pw-new" placeholder="새 비밀번호">
-							<span class="text-small-type1">비밀번호는 10~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 2종류 이상 또는 8~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 3종류 이상을 조합하여 입력해주세요
-							</span>
-						</li>
-						<li>
-							<label for="pw-re" class="offscreen">새 비밀번호 확인</label>
-							<input type="password" id="pw-re" placeholder="새 비밀번호 확인">
-							<span class="text-small-type1">위에서 설정한 비밀번호와 동일하게 입력해주세요</span>
-						</li>
-					</ul>
-				</form>
+		<!-- cont-wrap -->
+		<div class="cont-wrap">
+			<div class="title-type2">
+				문의내용
+			</div>
+			<div class="cont">
+				<div class="table-wrap">
+					<table>
+						<caption>문의내용 상세 테이블</caption>
+						<tr>
+							<th scope="row">문의일자</th>
+							<td class="textL">2018.09.28</td>
+						</tr>
+						<tr>
+							<th scope="row">상태</th>
+							<td class="textL"><em class="color-style7">답변대기</em></td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td class="textL">송헌호</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td class="textL">
+								hunho1234@naver.com
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대전화</th>
+							<td class="textL">
+								010-1234-5678
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td class="textL">
+								010-1234-5678
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">환자이름</th>
+							<td class="textL">
+								홍길동
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">문의유형</th>
+							<td class="textL">
+								불편
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">해당부서</th>
+							<td class="textL">
+								가정의학과
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td class="textL">진료과가 어디에 있는지 찾기가 매우 어려웠어요.</td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td class="textL">도대체 가정의학과는 어떻게 찾아가면 되나요??... 변원이 원체 미로 같아서 원... </td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+			<div class="title-type2">
+				답변내용
+			</div>
+			<div class="cont">
+				<div class="inputform-wrap">
+					<form action="">
+						<ul class="inputform">
+							<li>
+								<label class="title-type3" for="answer2">답변유형<sup class="icon-nc">*</sup> </label>
+								<div class="radio">
+									<input type="radio" id="radio-a1" name="select1"  value="1" aria-checked=”true” checked>
+									<label for="radio-a1" >직접입력</label>
+								</div>
+								<div class="radio">
+									<input type="radio" id="radio-a2" name="select1"  value="2" aria-checked=”false”>
+									<label for="radio-a2" >유선으로 처리</label>
+								</div>
+								<div class="radio">
+									<input type="radio" id="radio-a3" name="select1" value="3"  aria-checked=”false” >
+									<label for="radio-a3" >이메일로 처리</label>
+								</div>
+							</li>
+							<li>
+								<label class="title-type3" for="u-cont">내용<sup class="icon-nc">*</sup> </label>
+								<textarea name="" id="u-cont" rows="8" placeholder="내용"></textarea>
+							</li>
+						</ul>
+					</form>
+				</div>
+				
 			</div>
 		</div>
 		<!-- //cont-wrap -->
-		
 	</section>
 	<!-- //내용 전체 -->
 	<!-- 하단버튼 -->
 	<div class="btn-wrap">
-		<button type="button" class="btn color02">변경완료</button>
-		<button type="button" class="btn color03">다음에 변경하기</button>
+		<button type="button" class="btn color02">저장</button>
+		<button type="button" class="btn color03">취소</button>
 	</div>
 	<!-- 하단버튼 -->
 </section>

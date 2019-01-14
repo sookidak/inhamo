@@ -14,36 +14,42 @@
 	<section class="contents-wrap">
 		<!-- cont-wrap -->
 		<div class="cont-wrap">
+			<div class="cont">
+				상담을 원하시는 진료과를 선택하신 후문의내용을 입력해주세요.
+				작성하신 글은 비공개로 등록되며, 답변 담당부서 관리자와 
+				본인만 조회 가능합니다.
+				<div class="text-small-type1">운영취지에 맞지 않거나 정확하게 기술되지 않는 모호한 질문, 욕설이 섞인 글, 광고 등은 답변 드리지 않으며 임의 삭제할 수 있습니다.</div>
+			</div>
 			<div class="title-type2">
 				문의내용
 				<span class="section-right">
 					<span class="item">
-						<sup class="icon-nc">*</sup><span class="color-style6">필수입력</span>
+						<sup class="icon-nc">*</sup><span class="color-style4">필수입력</span>
 					</span>
 				</span>
 			</div>
 			<div class="cont">
-				<div class="table-wrap">
-					<table>
-						<caption>문의내용 입력 테이블</caption>
-						<tr>
-							<th scope="row"><label for="selectpart">진료과</label><sup class="icon-nc">*</sup></th>
-							<td class="textL"><select name="" id="selectpart">
-								<option value="">선택해주세요</option>
-							</select></td>
-						</tr>
-						<tr>
-							<th scope="row"><label for="uname">이름</label><sup class="icon-nc">*</sup></th>
-							<td class="textL"><input type="text" id="uname" value="송헌호" disabled></td>
-						</tr>
-						<tr>
-							<th scope="row"><label for="email">이메일</label><sup class="icon-nc">*</sup></th>
-							<td class="textL">
+				<div class="inputform-wrap">
+					<form action="">
+						<ul class="inputform">
+							<li>
+								<label class="title-type3" for="sel-part">진료과<sup class="icon-nc">*</sup> </label>
+								<select name="" id="sel-part">
+									<option value="">진료과 선택</option>
+									<option value="">naver.com</option>
+								</select>
+							</li>
+							<li>
+								<label class="title-type3" for="u-name">이름<sup class="icon-nc">*</sup> </label>
+								<input type="text" id="u-name" value="송헌호" disabled>
+							</li>
+							<li>
+								<label class="title-type3" for="u-email">이메일<sup class="icon-nc">*</sup> </label>
 								<div class="input-email">
 									<ul>
 										<li>
-											<input type="password" id="email" placeholder="hunho1234" ><span class="email-i">@</span>
-											<label for="emailnext" class="offscreen">이메일 뒷자리 입력</label><input type="text" id="emailnext" value="naver.com"></li>
+											<input type="password" id="u-email" placeholder="이메일"><span class="email-i">@</span>
+											<label for="u-email2" class="offscreen">이메일 뒷자리</label><input type="text" id="u-email2"></li>
 										<li>
 											<label for="email-sel" class="offscreen">이메일 선택</label>
 											<select name="" id="email-sel">
@@ -53,17 +59,17 @@
 										</li>
 									</ul>
 								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><label for="title">제목</label><sup class="icon-nc">*</sup></th>
-							<td class="textL"><input type="text" id="title"></td>
-						</tr>
-						<tr>
-							<th scope="row"><label for="cont">내용</label><sup class="icon-nc">*</sup></th>
-							<td class="textL"><textarea name="" id="cont" cols="30" rows="10"></textarea></td>
-						</tr>
-					</table>
+							</li>
+							<li>
+								<label class="title-type3" for="u-title">제목<sup class="icon-nc">*</sup> </label>
+								<input type="text" id="u-title" placeholder="제목">
+							</li>
+							<li>
+								<label class="title-type3" for="u-cont">내용<sup class="icon-nc">*</sup> </label>
+								<textarea name="" id="u-cont" rows="8" placeholder="내용"></textarea>
+							</li>
+						</ul>
+					</form>
 				</div>
 				
 			</div>

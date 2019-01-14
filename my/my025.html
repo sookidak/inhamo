@@ -1,0 +1,60 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container : pagetitle + 내용 전체 -->
+<section class="container" id="container">
+	<!-- 타이틀영역 -->
+	<section class="pagetitle-wrap">
+		<div class="title-left-btn">
+			<button type="button" class="btn-prevpage"><span  class="offscreen">이전페이지</span></button>
+		</div>
+		<h1 class="title-type1">정보수정</h1>
+	</section>
+	<!-- //타이틀영역 -->
+	<!-- tab -->
+	<div class="tab-wrap">
+		<div role="tablist" class="tablist-type1">
+			<a id="info-modi" href="#info-modi" role="tab" aria-selected="false">기본정보 수정</a>
+			<a id="ch-pw" href="#ch-pw" role="tab" aria-selected="true" class="active" >비밀번호 변경</a>
+			<a id="memout" href="#memout" role="tab" aria-selected="false">회원탈퇴</a>
+		</div>
+	</div>
+	<!-- //tab -->
+	<!-- 내용 전체 -->
+	<section class="contents-wrap">
+		<div class="cont-wrap" id="ch-pw">
+			
+			<div class="inputform-wrap">
+				<form action="">
+					<ul class="inputform">
+						<li>
+							<label for="pw" class="offscreen">현재 비밀번호</label>
+							<input type="password" id="pw" placeholder="현재 비밀번호">
+						</li>
+						<li>
+							<label for="pw-new" class="offscreen">새 비밀번호</label>
+							<input type="password" id="pw-new" placeholder="새 비밀번호">
+							<span class="text-small-type1">비밀번호는 10~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 2종류 이상 또는 8~20자리 이내 영문, 숫자, 특수문자(!,@,*)중 3종류 이상을 조합하여 입력해주세요
+							</span>
+						</li>
+						<li>
+							<label for="pw-re" class="offscreen">새 비밀번호 확인</label>
+							<input type="password" id="pw-re" placeholder="새 비밀번호 확인">
+							<span class="text-small-type1">위에서 설정한 비밀번호와 동일하게 입력해주세요</span>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		<!-- //cont-wrap -->
+		
+	</section>
+	<!-- //내용 전체 -->
+	<!-- 하단버튼 -->
+	<div class="btn-wrap">
+		<button type="button" class="btn color02">변경완료</button>
+		<button type="button" class="btn color03">다음에 변경하기</button>
+	</div>
+	<!-- 하단버튼 -->
+</section>
+<!-- //container : pagetitle + 내용 전체 -->
+@@include('../inc/footer.html')
