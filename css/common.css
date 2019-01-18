@@ -917,12 +917,12 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 .mylist-info .mylist-time.active{color:#0770bb;font-family: 'NotoKrM';}
 .mylist-info .mylist-title{color:#333;margin-bottom:6px;font-family: 'NotoKrR';}
 .mylist-btn{margin-top:20px;}
-.btn-guide{min-width:80px;border:1px solid #ddd;border-radius: 10px;height:20px;font-size:12px;text-align:left;padding:0 10px}
-.btn-guide:after{content:'';width:8px;height:4.5px;background: url('../img/icons.png') -150px 0 no-repeat;background-size:300px 300px;vertical-align: top;float:right;margin-top:5px;}
+.btn-guide{min-width:70px;border:1px solid #ddd;border-radius: 10px;height:20px;font-size:12px;text-align:left;padding:0 10px;text-align:center;}
+/* .btn-guide:after{content:'';width:8px;height:4.5px;background: url('../img/icons.png') -150px 0 no-repeat;background-size:300px 300px;vertical-align: top;float:right;margin-top:5px;} */
 .btn-guide.active:after{background-position: -150px -50px}
 .dright-wrap{float:right;}
 .dleft-wrap{float:left;width:calc( 100% - 90px)}
-.dleft-wrap ul li{display:inline-block;line-height:1.2;}
+.mychart-top ul li{display:inline-block;line-height:1.2;}
 .guide-box{position: absolute;right:0px;left:0px;top:100%;background: #f3f3f3;padding:15px;z-index:5;}
 
 /* 약품정보 */
@@ -931,6 +931,8 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 .radiolist li{margin-bottom:10px;}
 .radiolist li .radio + input{margin-top:7px}
 
+/* filter */
+.filter-top{margin-bottom:15px;}
 
 /** VARIABLES
 ===================================*/

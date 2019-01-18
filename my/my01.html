@@ -15,15 +15,14 @@
 		<!-- 진료예약정보 -->
 		<div class="cont-wrap">
 			<div class="mychart-top">
-				<div class="dleft-wrap">
-					<ul>
-						<li><em>송헌호(001168215)님</em>의</li>
-						<li>진료예약정보입니다.</li>
-					</ul>
-				</div>
-				<div class="dright-wrap js-showhide">
-					<button type="button" class="btn-guide js-showhide-btn">안내사항</button>
-					<div class="guide-box js-showhide-box">
+				<ul>
+					<li><em>송헌호(001168215)님</em>의</li>
+					<li>진료예약정보입니다.</li>
+					<li><button type="button" class="btn-guide ">안내사항</button></li>
+				</ul>
+				<!-- <div class="dright-wrap">
+					
+					<div class="guide-box">
 						<ul class="list-type1">
 							<li>오늘 날짜로부터 최대 1년까지의 정보가 제공되며, 
 							출력 또는 메모하여 방문하시면 보다 편리하게 
@@ -36,7 +35,14 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
+			</div>
+			<div class="filter-top">
+				<select name="" id="">
+					<option value="">전체</option>
+					<option value="">예약</option>
+					<option value="">취소</option>
+				</select>
 			</div>
 			<!-- 목록 -->
 			<div class="mychart-bottom">
@@ -46,7 +52,7 @@
 							<div class="mylist-top">
 								<div class="mylist-photo"><img src="../img/doctor_photo.jpg" alt=""></div>
 								<div class="mylist-info">
-									<div class="mylist-time active">2018.11.22(금)  16:05</div>
+									<div class="mylist-time active">2018.11.22(금)  16:05 <span>예약</span></div>
 									<div class="mylist-title">유방갑상선외과센터 (정신건강의학과)</div>
 									<div class="mylist-name">김대혁</div>
 								</div>
@@ -60,14 +66,14 @@
 							<div class="mylist-top">
 								<div class="mylist-photo"><img src="../img/doctor_photo.jpg" alt=""></div>
 								<div class="mylist-info">
-									<div class="mylist-time">2018.11.22(금)  16:05</div>
+									<div class="mylist-time">2018.11.22(금)  16:05 <span>취소</span></div>
 									<div class="mylist-title">유방갑상선외과센터 (정신건강의학과)</div>
 									<div class="mylist-name">김대혁</div>
 								</div>
 							</div>
-							<div class="mylist-btn btn-wrap">
+							<!-- <div class="mylist-btn btn-wrap">
 								<button type="button" class="btn btn-l  color01">상세보기</button>
-							</div>
+							</div> -->
 						</li>
 					</ul>
 				</div>

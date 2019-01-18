@@ -28,15 +28,17 @@
 		let $quickCloseBtn = $('.js-quickwrap').find('.js-quickclose');
 	
 		$quickmenuDiv.hide();
-		$quickmenBbtn.click(function(){
+		$quickmenBbtn.click(function(e){
 			if($quickmenuDiv.is(':hidden')){
 				$quickmenuDiv.show();
 			}
+			return false;
 		});
-		$quickCloseBtn.click(function(){
+		$quickCloseBtn.click(function(e){
 			if($quickmenuDiv.is(':visible')){
 				$quickmenuDiv.hide();
 			}
+			return false;
 		})
 	}
 	quickOpen();
@@ -74,9 +76,11 @@
 			if($shBox.is(':hidden')){
 				$(this).addClass(activeClass);
 				$shBox.show();
+				return false;
 			}else{
 				$(this).removeClass(activeClass);
 				$shBox.hide();
+				return false;
 			}
 		});
 	}
