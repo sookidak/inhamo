@@ -934,10 +934,8 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 /* filter */
 .filter-top{margin-bottom:15px;}
 
-/** VARIABLES
-===================================*/
-/** RESET AND LAYOUT
-===================================*/
+
+/** === bxslider === **/
 .bx-wrapper {
 	position: relative;
 	/* margin-bottom:60px; */
