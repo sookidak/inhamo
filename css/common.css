@@ -355,6 +355,10 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .board-wrap .tab-wrap .tablist-type1 a:before{content:'';position:absolute;left:0;top:50%;margin-top:-10px;background:#eee;display:inline-block;width:1px;height:20px;}
 .board-wrap .tab-wrap .tablist-type1 a:first-child:before{display:none;}
 
+/* 웹진 */
+.board-content-wrap.type2 .board-list li{float:left;width:calc(50% - 5px);margin-right:10px;}
+.board-content-wrap.type2 .board-list li:nth-child(2n){margin-right:0;}
+
 /* nodata */
 .nodata-wrap{min-height:280px;text-align:center;border-bottom:1px solid #eee;}
 .icon-nodata{text-align:center;padding-top:76px;}
