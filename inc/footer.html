@@ -38,6 +38,7 @@
 <script src="../js/accordion.js"></script>
 <script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/jquery.bxslider.min.js"></script>
+<script src="../js/imageviewer.js"></script>
 <script src="../js/imc_common.js"></script>
 
 <script>
@@ -55,6 +56,9 @@ $(document).ready(function(){
 		autoControlsCombine:true,
 		oneToOneTouch:true,
 		touchEnabled:true
+	});
+	$('.pannable-image').ImageViewer({
+		snapView:false
 	});
 })
 </script>

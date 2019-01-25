@@ -4,8 +4,9 @@
 		let $aside = $('.js-aside');
 		let $openBtn = $('.js-menu-open');
 		let asideW = $(window).outerWidth();
-
+		
 		$aside.hide().css('width',asideW);
+
 		$openBtn.click(function(){
 			if($aside.is(':hidden')){
 				$aside.stop().show().animate({'right': '0'});
@@ -17,10 +18,14 @@
 				$aside.stop().animate({'right': '100%'}).hide('100');
 				$('body').removeClass('scrollOff').off('scroll touchmove');
 			}
-		})
+		});
+		$(window).resize(function(){
+			asideW = $(window).outerWidth();
+			$aside.css('width',asideW);
+		});
 	};
 	asideOpen();
-
+	
 	// quick 메뉴
 	function quickOpen(){
 		let $quickmenBbtn = $('.js-quickbtn');
@@ -43,7 +48,6 @@
 	}
 	quickOpen();
 	
-
 	// 상단으로 가기
 	function scrollTop(){
 		let $scrolltopBtn = $('.js-scrolltop');
@@ -117,11 +121,9 @@
 				$selLi.addClass(opt.activeClass);
 			}
 			return false;
-
 		})
-
 	};
 
+	// 이미지 확대/축소 
 
 }( jQuery ));
-

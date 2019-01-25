@@ -93,6 +93,7 @@
 .cont-wrap .text-type2{padding-left: 15px;font-size: 14px;color: #777;margin-bottom: 14px;line-height: 20px;}
 .cont-wrap .cont{color:#333;font-size:14px;line-height:20px;}
 .cont-wrap .title-type2 +.cont{margin-top:15px;}
+.cont-wrap .cont +.search-box-wrap{margin-top:15px;}
 .cont-wrap .cont + .title-type2{margin-top:25px}
 .cont-wrap .cont + .board-content-wrap{margin-top:25px}
 .cont-wrap .cont .list-type2{margin-top:6px;}
@@ -309,6 +310,8 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 .search-filter:after{content:'';display:block;clear:both;}
 .search-filter li{float:left;width:calc(50% - 2.5px);margin-right:5px;}
 .search-filter li:last-child{margin-right:0;}
+
+.search-box-wrap.type2 .search-filter li{width:100%;}
 
 /* board-list */
 .list-row{border-bottom:1px solid #eee;/*padding:20px 0*/}
@@ -781,7 +784,7 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 /* aside-bottom */
 .quickbtns-wrap{padding:7px 15px 0;}
 .quickbtns-wrap:after{content:'';display:block;clear: both;}
-.quickbtns-wrap .btn-quick{width:calc(100% / 3);float:left;}
+.quickbtns-wrap .btn-quick{width:calc(100% / 3);float:left;margin-bottom:1px;}
 .btn-quick{background:#fff;font-size:12px;color:#777;display:inline-block;height:35px;border-right:1px solid #f2f3f8}
 .quickbtns-wrap .btn-quick:last-child{border-right:0;}
 
@@ -938,6 +941,19 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 /* filter */
 .filter-top{margin-bottom:15px;}
 
+/* 층별안내 */
+.cont.floor-info{border:1px solid #ddd;line-height:0;font-size:0 }
+.cont.floor-info img{width:100%}
+.legend-list li{float:left;margin-right:15px;vertical-align: middle;line-height:25px;font-size:11px;color:#777;margin-bottom:15px;}
+.legend-list li .icon{width:25px;height:25px;margin-right:5px;vertical-align: middle;text-align:center}
+.legend-list li .icon:before{background: url('../img/icon_legend.png') no-repeat;vertical-align: middle;background-size:50px 350px;}
+.legend-list li .icon.icon-legend01:before{width:20px;height:18px;}
+.legend-list li .icon.icon-legend02:before{width:19px;height:22px;background-position:0 -50px}
+.legend-list li .icon.icon-legend03:before{width:19px;height:19px;background-position:0 -100px}
+.legend-list li .icon.icon-legend04:before{width:20px;height:20px;background-position:0 -150px}
+.legend-list li .icon.icon-legend05:before{width:19px;height:21px;background-position:0 -200px}
+.legend-list li .icon.icon-legend06:before{width:12px;height:18.5px;background-position:0 -250px}
+.legend-list li .icon.icon-legend07:before{width:16.5px;height:20px;background-position:0 -300px}
 
 /** === bxslider === **/
 .bx-wrapper {
@@ -1124,4 +1140,232 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+  }
+
+
+  /*
+    ImageViewer v 1.1.0
+    Author: Sudhanshu Yadav
+    Copyright (c) 2015 to Sudhanshu Yadav - ignitersworld.com , released under the MIT license.
+    Demo on: http://ignitersworld.com/lab/imageViewer.html
+*/
+
+/***** image viewer css *****/
+#iv-container {
+	position: fixed;
+	background: #0d0d0d;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 1000;
+  }
+  
+  .iv-container {
+	overflow: hidden;
+  }
+  
+  .iv-close {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	text-shadow: 0px 0px 3px #6d6d6d;
+	-webkit-transition: all ease 200ms;
+	-moz-transition: all ease 200ms;
+	-o-transition: all ease 200ms;
+	transition: all ease 200ms;
+  }
+  .iv-close:after,
+  .iv-close:before {
+	content: "";
+	height: 4px;
+	width: 32px;
+	background: #FFF;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+  }
+  .iv-close:before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  .iv-close:after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+  }
+  .iv-close:hover {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+  }
+  /***** snap view css *****/
+  .iv-snap-view {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border: 1px solid #666;
+	background: black;
+	z-index: 100;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-transition: all ease 400ms;
+	-moz-transition: all ease 400ms;
+	-o-transition: all ease 400ms;
+	transition: all ease 400ms;
+	opacity: 0;
+  }
+  
+  .iv-snap-image-wrap {
+	display: inline-block;
+	position: absolute;
+	max-width: 150px;
+	max-height: 150px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+  }
+  
+  .iv-snap-image {
+	position: relative;
+  }
+  
+  .iv-snap-handle {
+	position: absolute;
+	border: 1px solid #ccc;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-box-shadow: 0px 0px 0px 200px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 0px 200px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 0px 200px rgba(0, 0, 0, 0.5);
+  }
+  
+  /*** zoom slider ***/
+  .iv-zoom-slider {
+	width: 100%;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 1px solid #666;
+	border-top: 0;
+	background: rgba(204, 204, 204, 0.1);
+	height: 15px;
+	position: absolute;
+	top: 150px;
+	left: -1px;
+  }
+  
+  .iv-zoom-handle {
+	width: 20px;
+	height: 15px;
+	background: #ccc;
+	position: absolute;
+  }
+  
+  /**** snap view css end *****/
+  .iv-image-view {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+  }
+  
+  .iv-image-wrap {
+	display: inline-block;
+  }
+  
+  .iv-image-wrap:active {
+	cursor: move;
+  }
+  
+  .iv-large-image {
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  }
+  
+  /****** CSS loader by http://projects.lukehaas.me/css-loaders/ *****/
+  .iv-loader {
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	z-index: 100;
+	margin-top: -16px;
+	margin-left: -16px;
+	font-size: 5px;
+	position: absolute;
+	text-indent: -9999em;
+	border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+	border-left: 1.1em solid #ffffff;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
+  }
+  .iv-loader:after {
+	width: 10em;
+	height: 10em;
+	border-radius: 50%;
+  }
+  @-webkit-keyframes load8 {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  @keyframes load8 {
+	0% {
+	  -webkit-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+	100% {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+	.iv-snap-view {
+	  z-index: -1;
+	  visibility: hidden;
+	}
   }
