@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<title>인하대병원</title>
+</head>
+<body>
+<div class="cont-wrap">
+	<!-- filte-select -->
+	<div class="search-box-wrap type2">
+		<ul class="search-filter">
+			<li>
+				<label for="filter-1" class="offscreen">층 선택</label>
+				<select name="" id="filter-1">
+					<option value="">B2F</option>
+					<option value="">B1F</option>
+					<option value="">1F</option>
+					<option value="">2F</option>
+					<option value="">3F</option>
+					<option value="">5F</option>
+					<option value="">7F</option>
+					<option value="">8F</option>
+					<option value="">9F</option>
+					<option value="">10F</option>
+					<option value="">11F</option>
+					<option value="">12F</option>
+					<option value="">15F</option>
+					<option value="">16F</option>
+					<option value="">17F</option>
+					<option value="">18F</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+	<!-- //filte-select -->
+	<div class="cont floor-info cf">
+		<img src="../img/floorb2.png" data-high-res-src="../img/floorb2.png" alt="" class="pannable-image">
+		<!-- 각 층별 이미지 
+		<img src="../img/floorb1.png" data-high-res-src="../img/floorb1.png" alt="" class="pannable-image">
+		<img src="../img/floor1.png" data-high-res-src="../img/floor1.png" alt="" class="pannable-image">
+		<img src="../img/floor2.png" data-high-res-src="../img/floor2.png" alt="" class="pannable-image">
+		<img src="../img/floor3.png" data-high-res-src="../img/floor3.png" alt="" class="pannable-image">
+		<img src="../img/floor5.png" data-high-res-src="../img/floor5.png" alt="" class="pannable-image">
+		<img src="../img/floor7.png" data-high-res-src="../img/floor7.png" alt="" class="pannable-image">
+		<img src="../img/floor8.png" data-high-res-src="../img/floor8.png" alt="" class="pannable-image">
+		<img src="../img/floor9.png" data-high-res-src="../img/floor9.png" alt="" class="pannable-image">
+		<img src="../img/floor10.png" data-high-res-src="../img/floor10.png" alt="" class="pannable-image">
+		<img src="../img/floor11.png" data-high-res-src="../img/floor11.png" alt="" class="pannable-image">
+		<img src="../img/floor12.png" data-high-res-src="../img/floor12.png" alt="" class="pannable-image">
+		<img src="../img/floor15.png" data-high-res-src="../img/floor15.png" alt="" class="pannable-image">
+		<img src="../img/floor16.png" data-high-res-src="../img/floor16.png" alt="" class="pannable-image">
+		<img src="../img/floor17.png" data-high-res-src="../img/floor17.png" alt="" class="pannable-image">
+		<img src="../img/floor18.png" data-high-res-src="../img/floor18.png" alt="" class="pannable-image"> 
+		-->
+	</div>
+	<div class="cont">
+		<ul class="legend-list">
+			<li><span class="icon icon-legend01"></span>은행</li>
+			<li><span class="icon icon-legend02"></span>접수·수납창구</li>
+			<li><span class="icon icon-legend03"></span>화장실</li>
+			<li><span class="icon icon-legend04"></span>엘레베이터</li>
+			<li><span class="icon icon-legend05"></span>에스컬레이터</li>
+			<li><span class="icon icon-legend06"></span>비상구</li>
+			<li><span class="icon icon-legend07"></span>소화기·소화전</li>
+		</ul>
+	</div>
+</div>
+
+	
+	<script src="../js/accordion.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery.bxslider.min.js"></script>
+	<script src="../js/imageviewer.js"></script>
+	<script src="../js/imc_common.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$('.pannable-image').ImageViewer({
+			snapView:false
+		});
+	})
+	</script>
+	
+	</body>
+	</html>

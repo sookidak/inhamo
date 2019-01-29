@@ -51,6 +51,8 @@
 .icon.icon-cscenter:before{width:35px;height:31.5px;background-position:-50px -200px;}
 .icon.icon-prev:before{width:9px;height:16.5px;background-position:-100px -100px;}
 .icon.icon-next:before{width:9px;height:16.5px;background-position:-100px -150px;}
+.icon.icon-enlarge:before{width: 45px;height: 69px;background-position:-100px -200px;background-size: 300px 300px;
+}
 
 .icon.icon-i{position:relative;}
 .icon.icon-i:before{width:20.5px;height:20.5px;background-position:-100px 0}
@@ -66,6 +68,7 @@
 .icon.icon-foreign:before{background:url('../img/icon_member.png') -250px top no-repeat;background-size:300px 200px;width:46px;height:39.5px;}
 .icon.icon-search{content: '';display: inline-block;width: 21px;height: 20px;background: url('../img/icon_board.png') left top no-repeat;background-size: 150px 150px;
 }
+
 
 /*  공통 폰트 */
 .NotoKrL{font-family: 'NotoKrL';} 
@@ -942,9 +945,14 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 .filter-top{margin-bottom:15px;}
 
 /* 층별안내 */
-.cont.floor-info{border:1px solid #ddd;line-height:0;font-size:0 }
+.cont.floor-info{border:1px solid #ddd;line-height:0;font-size:0;position: relative}
 .cont.floor-info img{width:100%}
+.floor-over{position: absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:2;text-align:center;cursor:pointer;}
+.floor-over .floor-over-inner{position:absolute;top:50%;left:50%;font-size:16px;color:#fff;font-family: 'NotoKrM';line-height:1.4;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);width:100%;}
 .legend-list li{float:left;margin-right:15px;vertical-align: middle;line-height:25px;font-size:11px;color:#777;margin-bottom:15px;}
+.floor-over .floor-over-inner p{margin-top:20px;}
 .legend-list li .icon{width:25px;height:25px;margin-right:5px;vertical-align: middle;text-align:center}
 .legend-list li .icon:before{background: url('../img/icon_legend.png') no-repeat;vertical-align: middle;background-size:50px 350px;}
 .legend-list li .icon.icon-legend01:before{width:20px;height:18px;}
