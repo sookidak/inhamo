@@ -10,33 +10,6 @@
 </head>
 <body>
 <div class="cont-wrap">
-	<!-- filte-select -->
-	<div class="search-box-wrap type2">
-		<ul class="search-filter">
-			<li>
-				<label for="filter-1" class="offscreen">층 선택</label>
-				<select name="" id="filter-1">
-					<option value="">B2F</option>
-					<option value="">B1F</option>
-					<option value="">1F</option>
-					<option value="">2F</option>
-					<option value="">3F</option>
-					<option value="">5F</option>
-					<option value="">7F</option>
-					<option value="">8F</option>
-					<option value="">9F</option>
-					<option value="">10F</option>
-					<option value="">11F</option>
-					<option value="">12F</option>
-					<option value="">15F</option>
-					<option value="">16F</option>
-					<option value="">17F</option>
-					<option value="">18F</option>
-				</select>
-			</li>
-		</ul>
-	</div>
-	<!-- //filte-select -->
 	<div class="cont floor-info cf">
 		<img src="../img/floorb2.png" data-high-res-src="../img/floorb2.png" alt="" class="pannable-image">
 		<!-- 각 층별 이미지 
@@ -80,7 +53,8 @@
 	<script>
 	$(document).ready(function(){
 		$('.pannable-image').ImageViewer({
-			snapView:false
+			snapView:false,
+			maxZoom:1000
 		});
 	})
 	</script>
