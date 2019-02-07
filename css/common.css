@@ -418,6 +418,16 @@ table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;
 
 .table-wrap.type2 td{border-right:0;font-size:15px;text-align:left;padding:15px 10px 15px 5px;}
 
+
+
+/* 테이블 가로 적용 */
+.tableWrapper table {  width: 100%;  background-color: transparent;  border-collapse: collapse;  border-spacing: 0;  cursor: default;  margin:0 ;  white-space: nowrap;}
+.tableWrapper { width: 100%;  overflow: auto;    margin: 0 auto;}
+::-webkit-scrollbar { width: 5px; height: 5px; background-color: rgba(0, 0, 0, 0.1); } 
+::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.5); }
+
+
+
 /* accordion */
 .accordion{position: relative;border-top:2px solid #bbb;border-bottom:1px solid #ddd}
 .accordion >dt{position:relative;border-top:1px solid #eee;line-height:46px;overflow:hidden;}
@@ -698,6 +708,7 @@ background: linear-gradient(135deg, #0770bb 0%,#138faa 100%);
 .dt-view-info{position:absolute;left:50%;top:40px;margin-left:13px;}
 .dt-view-photo{position:absolute;right:50%;bottom:0;width:205px;margin-right:-30px}
 .dt-view-photo img{width:100%;}
+.dt-view-photo img.nodoc{width:70%;}
 .dt-view-text{font-size:15px;color:#000;}
 .dt-view-name{font-size:30px;color:#000;font-family: 'NotoKrM';margin-top:7px;}
 .dt-view-zzim{position:absolute;left:50%;top:40px;margin-left:144px;}
