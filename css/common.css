@@ -470,6 +470,10 @@ table caption{display:block;height:0;width:0;font-size:0;line-height:0;margin:0;
 .lp-cont > .list-type-inner >li{font-size:14px;color:#333;margin-bottom:10px;}
 .lp-cont .list-type-inner .list-type2{margin-left:14px;margin-top:5px;}
 .lp-contents-wrap .table-wrap + .lp-title-wrap{margin-top:20px;}
+.lp-cont .btn-layer{ margin-top: 30px}
+.lp-cont .btn-layer button{background: #fff; color: #0770bb; border:1px solid #0770bb ;font-family: 'NotoKrR'; font-size: 16px;height: 50px; vertical-align: middle; width: 100%; margin-bottom: 10px}
+.lp-cont .btn-layer button:hover, .btn-layer button:focus{background: #0770bb; color: #fff; }
+
 
 /* etcbox */
 .etcbox{background:#f3f3f3;padding:20px 14px 10px;}
