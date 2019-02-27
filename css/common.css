@@ -340,7 +340,9 @@ background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C
 
 /* board-content */
 .board-cont-wrap{margin-bottom:20px;margin-top:20px;}
-.board-editor{min-height:220px;background:#eee;}
+.board-editor{min-height:220px; }
+.board-editor .img-box{ width: 100%; height:auto; margin: 1em 0px;text-align:center;}
+.board-editor img{max-width: 100%;}
 .board-cont-wrap .dt-list-wrap{margin:0;}
 .board-cont-wrap .cont+.title-type1{margin-top:25px}
 
@@ -881,6 +883,7 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 
 .main-box .btn{height:50px;}
 
+.main-slider img{width: 100%}
 .main-slider-img{overflow:hidden;}
 .main-slider .slider-item{padding:5px 15px 10px;}
 .slider-wrap{position: relative;overflow:hidden;padding-bottom:45px;}

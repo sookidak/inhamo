@@ -152,5 +152,64 @@
 	$(window).bind('orientationchange resize', function (event) { scrollTable(); });
 
 
+	//메인탭 적용
+	function tabAction() {
+		let $tab = $(".tablist-type1 a");
+		$tab.on("click", function () {	
+			event.preventDefault();
+			var idt = $(this).attr("href");
+			var lo = $(this).parents(".tab-wrap").attr("class");
+			lo = lo.replace("tab-wrap ","");
+			$lo=$("."+lo);
+			$idt = $(idt);	
+			$lo.find('[role=tabpanel]').hide();
+			$idt.show();
+			$lo.find("a").removeClass();
+			$(this).addClass("active");	
+			if (lo=='tab2') {
+				var no = idt.replace("#recent", "");			
+				$('.no' + no).addClass("ok");	
+				var $slider = $('.no' + no).bxSlider({
+					auto: true,
+					pager: true,
+					stopAutoOnClick: false,
+					autoControls: true,
+					useCSS: true,
+					infiniteLoop: false,
+					slideMargin: '15px',
+					controls: false,
+					autoControlsCombine: true,
+					oneToOneTouch: true,
+					touchEnabled: true
+				});
+			}		
+		});		
+	}
+	tabAction();
+
+	//에디터 이미지 조정
+	function imgEditor(){
+		let $img = $(".board-editor img");
+		console.log("");
+		
+		if ($img.length>1) {
+			for (let i = 0; i < $img.length; i++) {
+				$img.eq(i).wrap('<div class="img-box"></div>');
+				$img.eq(i).css("height","auto")
+
+				console.log(i);			
+			}
+			
+		}		
+	}
+	imgEditor();
+	
+
+	
+
+
 }( jQuery ));
+
+
+
 
