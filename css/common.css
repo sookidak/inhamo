@@ -841,7 +841,7 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 
 .main-box-wrap{padding:0 15px 25px}
 .main-box-wrap.no-pd{padding:0 0 0;}
-.main-box{display:inline-block;width:100%;position:relative;border-radius:10px;background: #fff;box-shadow:0 1px 6px #c9c9c9;overflow:hidden;}
+.main-box{display:inline-block;width:100%;position:relative;border-radius:10px;background: #fff;box-shadow:0 1px 6px #c9c9c9;overflow:hidden; }
 .main-box-text{font-size:19px;color:#000;line-height:1.4;letter-spacing:-0.09em;margin-bottom:20px;margin:0 15px 20px;padding-top:25px;}
 .main-box-text em{font-family: 'NotoKrM';color:#199da3;}
 
@@ -883,6 +883,8 @@ background: linear-gradient(to bottom, #0770bb 0%,#199da3 100%);}
 
 .main-box .btn{height:50px;}
 
+
+.slider-item .main-box{min-height: 257px}
 .main-slider img{width: 100%}
 .main-slider-img{overflow:hidden;}
 .main-slider .slider-item{padding:5px 15px 10px;}
@@ -1426,3 +1428,6 @@ transform: translate(-50%, -50%);width:100%;}
 	  visibility: hidden;
 	}
   }
+
+  /* 에디터 적용 */
+.edit-wrap {padding:20px }
