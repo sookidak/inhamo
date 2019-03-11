@@ -1014,6 +1014,8 @@ transform: translate(-50%, -50%);width:100%;}
 .agree-text ul + .text-style2 {margin-top: 15px}
 .agree-text p + ul {margin-top: 10px}
 
+.agree-text .table-wrap td {word-break: break-word;}
+
 /** === bxslider === **/
 .bx-wrapper {
 	position: relative;
