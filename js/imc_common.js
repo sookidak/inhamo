@@ -1,10 +1,10 @@
 (function ( $ ) {
 	function asideOpen(){
-		// left 영역 
+		// left 영역
 		let $aside = $('.js-aside');
 		let $openBtn = $('.js-menu-open');
 		let asideW = $(window).outerWidth();
-		
+
 		$aside.hide().css('width',asideW);
 
 		$openBtn.click(function(){
@@ -25,13 +25,13 @@
 		});
 	};
 	asideOpen();
-	
+
 	// quick 메뉴
 	function quickOpen(){
 		let $quickmenBbtn = $('.js-quickbtn');
 		let $quickmenuDiv = $('.js-quickwrap');
 		let $quickCloseBtn = $('.js-quickwrap').find('.js-quickclose');
-	
+
 		$quickmenuDiv.hide();
 		$quickmenBbtn.click(function(e){
 			if($quickmenuDiv.is(':hidden')){
@@ -47,7 +47,7 @@
 		})
 	}
 	quickOpen();
-	
+
 	// 상단으로 가기
 	function scrollTop(){
 		let $scrolltopBtn = $('.js-scrolltop');
@@ -104,7 +104,7 @@
 
 		$menuFirst.click(function(){
 			var $selLi = $(this).parent('li');
-			
+
 			if($selLi.hasClass(opt.activeClass)){
 				$selLi.removeClass(opt.activeClass);
 			}else{
@@ -155,35 +155,42 @@
 	//메인탭 적용
 	function tabAction() {
 		let $tab = $(".tablist-type1 a");
-		$tab.on("click", function () {	
+
+		$tab.on("click", function () {
 			event.preventDefault();
 			var idt = $(this).attr("href");
 			var lo = $(this).parents(".tab-wrap").attr("class");
 			lo = lo.replace("tab-wrap ","");
 			$lo=$("."+lo);
-			$idt = $(idt);	
+			$idt = $(idt);
 			$lo.find('[role=tabpanel]').hide();
 			$idt.show();
 			$lo.find("a").removeClass();
-			$(this).addClass("active");	
+			$(this).addClass("active");
 			if (lo=='tab2') {
-				var no = idt.replace("#recent", "");			
-				$('.no' + no).addClass("ok");	
-				var $slider = $('.no' + no).bxSlider({
-					auto: true,
-					pager: true,
-					stopAutoOnClick: false,
-					autoControls: true,
-					useCSS: true,
-					infiniteLoop: false,
-					slideMargin: '15px',
-					controls: false,
-					autoControlsCombine: true,
-					oneToOneTouch: true,
-					touchEnabled: true
-				});
-			}		
-		});		
+				var no = idt.replace("#recent", "");
+
+				if(no == 3 || no == 4){
+					return false;
+				}else{
+					$('.no' + no).addClass("ok");
+					mainTabSlider.destroySlider();
+					mainTabSlider = $('.no' + no).bxSlider({
+						auto: true,
+						pager: true,
+						stopAutoOnClick: false,
+						autoControls: true,
+						useCSS: true,
+						infiniteLoop: false,
+						slideMargin: '15px',
+						controls: false,
+						autoControlsCombine: true,
+						oneToOneTouch: true,
+						touchEnabled: true
+					});
+				}
+			}
+		});
 	}
 	tabAction();
 
@@ -191,25 +198,21 @@
 	function imgEditor(){
 		let $img = $(".board-editor img");
 		console.log("");
-		
+
 		if ($img.length>1) {
 			for (let i = 0; i < $img.length; i++) {
 				$img.eq(i).wrap('<div class="img-box"></div>');
 				$img.eq(i).css("height","auto")
 
-				console.log(i);			
+				console.log(i);
 			}
-			
-		}		
+
+		}
 	}
 	imgEditor();
-	
 
-	
+
+
 
 
 }( jQuery ));
-
-
-
-
