@@ -1,195 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/common.css">
-	<title>인하대병원</title>
-</head>
-<body>
-<div class="skip">
-	<h2>스킵네비게이션</h2>
-	<ul>
-		<li><a href="#nav">메뉴바로가기</a></li>
-		<li><a href="#container">본문바로가기</a></li>
-	</ul>
-</div>
-<!-- header -->
-<header class="header">
-	<h1 class="logo"><a href="#link"><img src="../img/logo.png" alt="인하대병원" /></a></h1>
-	<div class="header-right">
-		<div class="header-btns">
-			<button type="button" class="btn-login"><span class="offscreen">로그인</span></button>
-			<button type="button" class="btn-menu js-menu-open"><span class="offscreen">메뉴보기</span></button>
-		</div>
-	</div>
-
-	<!-- aside 영역 -->
-	<div class="aside-wrap js-aside">
-		<!-- 로그아웃 일때 -->
-		<div class="aside-top">
-			<div class="aside-top-comment">로그인 하시면 보다 다양한<br>서비스를 이용하실 수 있습니다.</div>
-			<div class="aside-top-btns">
-				<button type="button" class="btn btn-on">로그인</button><button type="button" class="btn">회원가입</button>
-			</div>
-		</div>
-		<!-- //로그아웃 일때 -->
-		<!-- 로그인 일때 -->
-		<div class="aside-top">
-			<div class="aside-top-comment"><span class="user-name">송헌호</span>님 환영합니다.<br>오늘 하루도 건강하세요.</div>
-			<div class="aside-top-btns">
-				<button type="button" class="btn">정보수정</button><button type="button" class="btn btn-on">로그아웃</button>
-			</div>
-		</div>
-		<!-- //로그인 일때 -->
-		<!-- lnb -->
-		<div class="lnb">
-			<nav class="nav-wrap" id="nav">
-				<ul class="nav js-nav">
-					<!-- lnb  메뉴 열릴때 active 클래스 추가 -->
-					<li>
-						<button type="button" class="btn-lnb rv" data-href="#gnbmenu1" aria-menu-index="1" aria-expanded="false">진료예약</button>
-						<div id="gnbmenu1" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<li><a href="#link">회원예약</a></li>
-								<li><a href="#link">비회원예약</a></li>
-								<li><a href="#link">비회원예약조회</a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<button type="button" class="btn-lnb dt"  data-href="#gnbmenu2" aria-menu-index="2" aria-expanded="false">진료과/의료진</button>
-						<div id="gnbmenu2" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<li><a href="#link">진료과 및 의료진</a></li>
-								<li><a href="#link">전문센터</a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<button type="button" class="btn-lnb dn"  data-href="#gnbmenu3" aria-menu-index="3" aria-expanded="false">진료안내</button>
-						<div id="gnbmenu3" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<!-- 3depth 열려야 할때 active 클래스 추가 -->
-								<li>
-									<a href="#link" class="has-sub">진료예약안내</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">초진안내</a></li>
-										<li><a href="#link">재진안내</a></li>
-									</ul>
-								</li>
-								<li><a href="#link" class="has-sub">외래진료안내</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">절차안내</a></li>
-										<li><a href="#link">시간 및 접수안내</a></li>
-										<li><a href="#link">순서도</a></li>
-										<li><a href="#link">요양급여의뢰서</a></li>
-									</ul>
-								</li>
-								<li><a href="#link">입원진료안내</a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<button type="button" class="btn-lnb gd"  data-href="#gnbmenu4" aria-menu-index="4" aria-expanded="false">이용안내</button>
-						<div id="gnbmenu4" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<li><a href="#link">찾아오시는 길</a></li>
-								<li><a href="#link">층별안내</a></li>
-								<li><a href="#link">병문안 안내</a></li>
-								<li><a href="#link">주차장 이용안내</a></li>
-								<li><a href="#link">전화번호 안내</a></li>
-								<li><a href="#link">편의시설</a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<button type="button" class="btn-lnb hi"  data-href="#gnbmenu5" aria-menu-index="5" aria-expanded="false">건강정보</button>
-						<div id="gnbmenu5" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<li><a href="#link">건강의학정보</a></li>
-								<li><a href="#link">영양정보</a></li>
-								<li><a href="#link">약품정보</a></li>
-								<li><a href="#link">검사정보</a></li>
-								<li><a href="#link">진료상담</a></li>
-								<li><a href="#link">인하웹진</a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<button type="button" class="btn-lnb my"  data-href="#gnbmenu6" aria-menu-index="6" aria-expanded="false">나의차트</button>
-						<div id="gnbmenu6" aria-hidden="false">
-							<ul class="lnb-2depth">
-								<li><a href="#link" class="has-sub">예약정보조회</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">진료예약정보</a></li>
-										<li><a href="#link">검진예약정보</a></li>
-									</ul>
-								</li>
-								<li><a href="#link" class="has-sub">진료내역조회</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">진료내역</a></li>
-										<li><a href="#link">검진내역</a></li>
-									</ul>
-								</li>
-								<li><a href="#link" class="has-sub">소통센터</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">진료상담</a></li>
-										<li><a href="#link">진료상담(관리자용)</a></li>
-										<li><a href="#link">고객의소리</a></li>
-										<li><a href="#link">고객의소리(관리자용)</a></li>
-									</ul>
-								</li>
-								<li><a href="#link" class="has-sub">즐겨찾기</a>
-									<ul class="lnb-3depth">
-										<li><a href="#link">나의 의료진</a></li>
-										<li><a href="#link">나의 건강정보</a></li>
-									</ul>
-								</li>
-								<li><a href="#link">정보수정</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<!-- //lnb -->
-		<!-- aside-bottom -->
-		<div class="aside-bottom">
-			<!-- quick 버튼들 -->
-			<div class="quickbtns-wrap">
-				<button type="button" class="btn-quick">개인정보처리방침</button>
-				<button type="button" class="btn-quick">이용약관</button>
-				<button type="button" class="btn-quick">이메일무단수집거부</button>
-				<button type="button" class="btn-quick">환자의권리와의무</button>
-				<button type="button" class="btn-quick">공지사항</button>
-				<button type="button" class="btn-quick">인하뉴스</button>
-			</div>
-			<!-- //quick 버튼들 -->
-			<!-- copyright -->
-			<div class="copy-info-wrap">
-				<dl class="copy-info">
-					<dt>전화예약 및 문의</dt>
-					<dd><em class="color-style5">032-890-2000 / 1600-8114</em> (평일 09:00 ~ 17:30, 주말 및 공휴일 휴무)</dd>
-					<dt>주소</dt>
-					<dd>인천광역시 중구 인항로 27 (신흥동 3가 7-206) 인하대병원(우) 22332<br><a href="#link" class="active-type1">오시는길</a></dd>
-					<dd></dd>
-				</dl>
-				<div class="pcview-wrap">
-					<button type="button" class="btn color03 btn-pc">PC버전 바로가기</button>
-				</div>
-			</div>
-			<!-- //copyright -->
-		</div>
-		<!-- //aside-bottom -->
-	</div>
-	<!-- //aside 영역 -->
-</header>
-<!-- //header -->
-
-
+@@include('../inc/head.html')
+@@include('../inc/header.html')
 <!-- main-container -->
 <section class="container main" id="container">
 	<div class="main-cont-bg"></div>
@@ -278,7 +88,7 @@
 		</div>
 		<!-- //mian-box -->
 	</div>
-
+	
 	<div class="main-box-wrap no-pd">
 		<!-- tab-type1 -->
 		<div class="tab-wrap tab2">
@@ -354,7 +164,7 @@
 			</div>
 			<div id="recent2" role="tabpanel" aria-labelledby="doctors-anchor" class="slider-wrap" hidden>
 				<!-- 메인 슬라이더 1 -->
-				<div class="no2 main-slider">
+				<div class="no2 main-slider">					
 					<div class="slider-item">
 						<div class="main-box">
 							<a href="">
@@ -394,7 +204,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- //메인 슬라이더 -->
+				<!-- //메인 슬라이더 -->				
 			</div>
 			<div id="recent3" role="tabpanel" aria-labelledby="doctors-anchor" class="slider-wrap" hidden>
 				<!-- 메인 슬라이더 1 -->
@@ -418,11 +228,11 @@
 						</div>
 					</div>
 				</div>
-				<!-- //메인 슬라이더 -->
+				<!-- //메인 슬라이더 -->				
 			</div>
 			<div id="recent4" role="tabpanel" aria-labelledby="doctors-anchor" class="slider-wrap" hidden>
 				<!-- 메인 슬라이더 1 -->
-				<div class="main-slider">
+				<div class="main-slider">					
 					<div class="slider-item">
 						<div class="main-box">
 							<!-- 슬라이더 마지막일때 -->
@@ -446,7 +256,7 @@
 			</div>
 		</div>
 		<!-- //tab-type1 -->
-
+		
 	</div>
 	<div class="main-box-wrap">
 		<!-- mian-box -->
@@ -464,79 +274,10 @@
 				<button type="button" class="btn color02">주소복사</button>
 				<button type="button" class="btn color01">층별안내</button>
 			</div>
-
+			
 		</div>
 		<!-- //mian-box -->
 	</div>
 </section>
-
-<!-- footer -->
-<div class="bottom-quickmenu">
-	<button type="button" class="btn-quickmenu js-quickbtn"><span class="offscreen">빠른 메뉴 열기</span></button>
-</div>
-<div class="quickmenu-list-wrap js-quickwrap">
-	<div class="bottom-quickmenu">
-		<button type="button" class="btn-quickmenu close js-quickclose"><span class="offscreen">빠른 메뉴 닫기</span></button>
-	</div>
-	<ul class="quickmenu-list">
-		<li>
-			<button type="button" class="btn-quickmenu2 reserve"><span class="icon"></span><span class="quickmenu-text">진료예약</span></button>
-		</li>
-		<li>
-			<button type="button" class="btn-quickmenu2 lookup"><span class="icon"></span><span class="quickmenu-text">예약조회</span></button>
-		</li>
-		<li>
-			<button type="button" class="btn-quickmenu2 depart"><span class="icon"></span><span class="quickmenu-text">진료과</span></button>
-		</li>
-		<li>
-			<button type="button" class="btn-quickmenu2 doctor"><span class="icon"></span><span class="quickmenu-text">의료진</span></button>
-		</li>
-		<li>
-			<button type="button" class="btn-quickmenu2 customer"><span class="icon"></span><span class="quickmenu-text">고객센터</span></button>
-		</li>
-	</ul>
-</div>
-<div class="bottom-quick-tel">
-	<button type="button" onclick="document.location.href='tel:0328902114'"><span class="offscreen">인하대병원 대표전화 전화걸기</span></button>
-</div>
-<div class="bottom-quick-map">
-	<button type="button"><span class="offscreen">인하대병원 오시는길 바로가기</span></button>
-</div>
-<div class="bottom-quick-up js-scrolltop">
-	<button type="button"><span class="offscreen">페이지 상단으로 올리기</span></button>
-</div>
-<!-- footer -->
-
-<script src="../js/accordion.js"></script>
-<script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/jquery.bxslider.min.js"></script>
-<script src="../js/imageviewer.js"></script>
-<script src="../js/imc_common.js"></script>
-
-<script>
-$(document).ready(function(){
-	$('.js-nav').showLnb();
-
-	mainTabSlider = $('.no1').bxSlider({
-		auto: true,
-		pager: true,
-		stopAutoOnClick: false,
-		autoControls: true,
-		useCSS: true,
-		infiniteLoop: false,
-		slideMargin: '15px',
-		controls: false,
-		autoControlsCombine: true,
-		oneToOneTouch: true,
-		touchEnabled: true
-	});
-
-	$('.pannable-image').ImageViewer({
-		snapView:false
-	});
-})
-</script>
-
-</body>
-</html>
 <!-- //main-container -->
+@@include('../inc/footer.html')
